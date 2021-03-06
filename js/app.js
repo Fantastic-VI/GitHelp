@@ -63,4 +63,3 @@ MainConstructor.prototype.removeItem = function (num) {
   this.items.splice(num, 1);
   console.log(num);
 };
-
