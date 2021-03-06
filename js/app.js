@@ -43,13 +43,6 @@ MainConstructor.prototype.saveToLocalStorage = function() {
   localStorage.setItem('a', JSON.stringify(this.items));
 };
 
-MainConstructor.prototype.removeItem = function(item) {
-  // TODO: Fill in this instance method to remove one item from the cart.
-  // Note: You will have to decide what kind of parameter to pass in here!
-
-  this.items.splice(item, 1);
-
-};
 MainConstructor.prototype.fillTheList = function (listItem) {
   for (let i = 0 ; i < Help.all.length ; i++) {
     const help = document.createElement('option');
