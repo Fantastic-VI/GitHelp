@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 80px minmax(100px,1fr) 100px;
+    gap: 30px;
+}
+
+body {
+    width: 960px;
+    margin: auto;
+    font-family: 'Merriweather', serif;}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1.5fr 1.5fr;
+    align-items: center;
+    border-style: solid;
+    border-width: thin;
+    border-color: #ddd;
+
+}
+
+header nav a {
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+}
+
+.listAndVolunteersImg {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+ol li {
+    margin: 15px;
+}
+
+footer {
+    border-style: solid;
+    border-width: thin;
+    border-color: #ddd;
+}
