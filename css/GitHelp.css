@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 100px minmax(100px,1fr) 100px;
+    gap: 0px;
+}
+
+body {
+    width: 900px;
+    margin: auto;
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+    background-color: blanchedalmond;
+}
+h1
+{
+    padding: 38px;
+    margin: -13px -30px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr 2fr;
+    align-items: center;
+    border-style: solid;
+    border-width: thin;
+    border-color: #ddd;
+    word-spacing: 0px;
+}
+
+header nav a {
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+}
+footer {
+    border-style: solid;
+    border-width: thin;
+    border-color: #ddd;
+    padding: 43px 15px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+  }
+  fieldset
+  {
+    border-top: solid;
+    border-color: black;
+    border-style: solid;
+    padding: 50px 30px
+  }
+  span
+  {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  legend
+  {
+      color: black;
+      font-size: larger;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .phone
+  {
+    display: grid;
+    width: 100%;
+    height: 43px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  .display
+  {
+    display: block;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
