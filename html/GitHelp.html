@@ -4,37 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GitHelp</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../css/GitHelp.css">
+    
 </head>
+
 <body>
+<section class="container">
+    <header>
+        <img class="logo" src="https://placehold.it/80x60/DDD" alt="">
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="html/GitHelp.html">GitHelp</a>
+        <a href="html/GiveHelp.html">Volunteer!</a>
+        <a href="html/about.html">About Us</a>
+        <a href="html/contact.html">Contact Us</a>
+        </nav>
+        
+    </header>
+    <main>
     <h1>Enter your information</h1> <br>
     <form id="form">
         <fieldset>
-            <legend>FFFF</legend>
+            <legend>Information </legend>
             <label>
                 <span>Select the type of service</span>
                 <select id="items"></select>
             </label>
+            <br>
+            <br>
             <label>
                 <span>Name</span>
                 <input type="text" id="name">
             </label>
+            <br>
+            <br>
             <label>
-                <span>Phone number</span>
-                <input type="number" id="phone">
+                <span >Phone number</span>
+                <input class="phone" type="number" id="phone">
             </label>
+            <br>
+            <br>
             <label>
-                <span>Date and Time of Service</span>
+                <span class="display">Date and Time of Service</span>
                 <input type="text" id = "time">
             </label>
+            <br>
+            <br>
             <label>
                 <span>Location</span>
                 <input type="text" id="location">
             </label>
+            <br>
+            <br>
             <input type="submit" value="Submit">
         </fieldset>
     </form>
     <script src="../js/app.js"></script>
     <script src="../js/GitHelp.js"></script>
+</main>
+<footer>
+    <p>XXX Footer XXX</p>
+</footer>
 </body>
 </html>
