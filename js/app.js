@@ -56,3 +56,98 @@ MainConstructor.prototype.removeItem = function (num) {
   this.items.splice(num, 1);
   console.log(num);
 };
+
+
+
+/*start of font sizing*/
+function decreaseFontSizeBy1px() {
+  let txt = document.querySelector('body');
+  let style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+  let currentSize = parseFloat(style);
+  txt.style.fontSize = (currentSize - 1) + 'px';
+}
+function increaseFontSizeBy1px() {
+  let txt = document.querySelector('body');
+  let style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+  let currentSize = parseFloat(style);
+  txt.style.fontSize = (currentSize + 1) + 'px';
+
+}
+/*end of font sizing*/
+
+/*start of color contrast*/
+let ult = false;
+let bool = true;
+let imageStatus = true;
+function DarkMode() {
+  if ( document.getElementById('v2').checked === true){
+    ult = document.getElementById('v2').checked;
+    document.getElementById('v2').checked = false;
+    let element7 = document.body;
+    let element8 = document.querySelector('header');
+    let element9 = document.querySelector('footer');
+    element7.classList.toggle('Light-mode');
+    element8.classList.toggle('Light-mode');
+    element9.classList.toggle('Light-mode');
+    document.querySelector('img').style.filter = 'none';
+  }
+  let element = document.body;
+  let element2 = document.querySelector('header');
+  let element3 = document.querySelector('footer');
+  if (imageStatus === true){
+    document.getElementById('logo').src = '../images/black.png';
+    imageStatus = false;
+    ult = false;
+  }
+  else if (imageStatus === false && ult === true){
+    document.getElementById('logo').src = '../images/black.png';
+    ult = false;
+  }
+  else if ( imageStatus === false && ult === false ){
+    document.getElementById('logo').src = '../images/white.png';
+    imageStatus = true;
+  }
+  element.classList.toggle('dark-mode');
+  element2.classList.toggle('dark-mode');
+  element3.classList.toggle('dark-mode');
+  if (bool === true) {
+    document.querySelector('img').style.filter = 'drop-shadow(8px 8px 10px gray)';
+    bool = false;
+  }
+  else {
+    bool = true;
+    document.querySelector('img').style.filter = 'none';
+  }
+
+}
+
+let bool2 = true;
+function LightMode() {
+  if (document.getElementById('v1').checked){
+    document.getElementById('v1').checked = false;
+    let element4 = document.body;
+    let element5 = document.querySelector('header');
+    let element6 = document.querySelector('footer');
+    element4.classList.toggle('dark-mode');
+    element5.classList.toggle('dark-mode');
+    element6.classList.toggle('dark-mode');
+    document.querySelector('img').style.filter = 'none';
+  }
+  let element = document.body;
+  let element2 = document.querySelector('header');
+  let element3 = document.querySelector('footer');
+  element.classList.toggle('Light-mode');
+  element2.classList.toggle('Light-mode');
+  element3.classList.toggle('Light-mode');
+  if (bool2 === true) {
+    document.querySelector('img').style.filter = 'contrast(200%)';
+    bool2 = false;
+  }
+  else {
+    bool2 = true;
+    document.querySelector('img').style.filter = 'none';
+  }
+  document.getElementById('logo').src = '../images/white.png';
+}
+
+/*end of color contrast*/

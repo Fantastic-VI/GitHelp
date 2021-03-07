@@ -11,18 +11,43 @@
 <body>
 <section class="container">
     <header>
-        <img class="logo" src="https://placehold.it/80x60/DDD" alt="">
-        <nav>
-        <a href="index.html">Home</a>
-        <a href="html/GitHelp.html">GitHelp</a>
-        <a href="html/GiveHelp.html">Volunteer!</a>
-        <a href="html/about.html">About Us</a>
-        <a href="html/contact.html">Contact Us</a>
+        <img id="logo" style="width:120px; margin-left: 40px; margin-top: -5px" src="./images/white.png" alt="">
+        <nav id="return">
+        <a class="q" href="index.html">Home</a>
+        <a class="q" href="html/GitHelp.html">GitHelp</a>
+        <a class="q" href="html/GiveHelp.html">Volunteer!</a>
+        <a class="q" href="html/about.html">About Us</a>
+        <a class="q" href="html/contact.html">Contact Us</a>
         </nav>
         
     </header>
     <main>
-        <div style="height: 40px ; width:1fr; background-color:aqua "></div>
+        <!-------second nav--->
+        <div class="secondNav">
+            <div class = "plus">
+            <input type="button" value="-" onclick="decreaseFontSizeBy1px()" class="sizingButton">
+            <p id="a">Font Size</p>
+            
+            <input type="button" value="+" onclick="increaseFontSizeBy1px()" class="sizingButton">
+        </div>
+        <div>
+            <span>Dark Mode</span>
+            <label class="switch">
+                
+                <input type="checkbox" onclick="DarkMode()" id = "v1">
+                <span class="slider round"></span>
+                
+              </label>
+            </div>
+            <div>
+              <span>Light Mode</span>
+              <label class="switch">
+                <input type="checkbox" onclick="LightMode()" id="v2">
+                <span class="slider round"></span>
+              </label>
+            </div>
+        </div>
+    
         <!--Slider Images-->
         <div class="sliderImgs">
             <p>XXX Slide Show XXX</p>
@@ -61,9 +86,10 @@
         <img src="http://placehold.it/960X350/000" alt="">
     </main>
     <footer>
-        <p>XXX Footer XXX</p>
+        <p>All Rights Reserved &copy; 2021 <br> Fantastic VI </p>
     </footer>
 </section>
+<script src="js/app.js"></script>
     
 </body>
 </html>
