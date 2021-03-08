@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GiveHelp</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/GiveHelp.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <section class="container">
@@ -22,78 +23,56 @@
 
         </header>
         <main>
-            <!-------second nav--->
-            <div class="secondNav">
-                <div class="plus">
-                    <input type="button" value="-" onclick="decreaseFontSizeBy1px()" class="sizingButton">
-                    <p id="a">Font Size</p>
-
-                    <input type="button" value="+" onclick="increaseFontSizeBy1px()" class="sizingButton">
-                </div>
-                <div>
-                    <span>Dark Mode</span>
-                    <label class="switch">
-
-                        <input type="checkbox" onclick="DarkMode()" id="v1">
-                        <span class="slider round"></span>
-
-                    </label>
-                </div>
-                <div>
-                    <span>Light Mode</span>
-                    <label class="switch">
-                        <input type="checkbox" onclick="LightMode()" id="v2">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-            </div>
-    
-        <div id="div1">
-    <h1>Pick the service you want to provide</h1>
-    <form id="form2">
-        <fieldset>
-            <!-- <legend>CCCC</legend> -->
-            <label id="label1">
-                <span id="span1">Select the type of service</span>
-                <select id="items2"></select>
-            </label>
-            <input id="input1" type="submit" value="Submit">
-
-        </fieldset>
-    </form>
-    </div>
-    <div>
-        <table id="table">
-            <thead>
-            <tr>
-                <th>Name</th>
-                <th>Location</th>
-                <th>Phone</th>
-                <th>Date and Time</th>
-                <th>Volunteer</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-        </table>
-    </div>
-    <div id="volData" style="visibility: hidden;">
-        <form id="enterData">
+            <div id="div1">
+        <h1>Pick the service you want to provide</h1>
+        <form id="form2">
             <fieldset>
-                <legend>Please enter you contact info</legend>
-                <label>
-                    <span>Name</span>
-                    <input type="text" id="name2">
+                <!-- <legend>CCCC</legend> -->
+                <label id="label1">
+                    <span id="span1">Select the type of service</span>
+                    <select id="items2"></select>
                 </label>
-                <label>
-                    <span>Phone number</span>
-                    <input type="number" id="phone2">
-                </label>
-                <input type="submit" value="submit">
+                <input id="input1" type="submit" value="Submit">
             </fieldset>
         </form>
-    </div>
-    <script src="../js/app.js"></script>
-    <script src="../js/GiveHelp.js"></script>
+        </div>
+        <div>
+            <table id="table">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Location & Building No.</th>
+                    <th>Date and Time</th>
+                    <th>Details</th>
+                    <th>Phone number</th>
+                    <th>Volunteer</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            </table>
+        </div>
+        <div id="volData" style="visibility: hidden;">
+            <div id="alert" style="visibility: hidden;">
+                            <h1> Thanks for Volunteering</h1>
+                        </div>
+            <form id="enterData">
+                <fieldset>
+                    <legend>Please enter you contact info</legend>
+                    <label>
+                        <span>Name <span style="color: red; font-size: 60%;">*required</span></span>
+                        <input type="text" id="name2">
+                    </label>
+                    <label>
+                        <span>Phone number <span style="color: red; font-size: 60%;">*required</span></span>
+                        <input type="number" id="phone2"  required 
+                        pattern="[0-9]{10}" placeholder="Enter you phone number, it should consist of 10 Digits">
+                    </label>
+                    <input type="submit" value="submit">
+                </fieldset>
+            </form>
+        </div>
+        <script src="../js/app.js"></script>
+        <script src="../js/GiveHelp.js"></script>
 </main>
 <footer>
     <p>All Rights Reserved &copy; 2021 <br> Fantastic VI </p>
