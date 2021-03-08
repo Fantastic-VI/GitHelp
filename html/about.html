@@ -1,137 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/about.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHelp</title>
+   
+    <link rel="stylesheet" href="../css/reset.css">
+   
+    <link rel="stylesheet" href="../css/style.css" >
+    <link rel="stylesheet" href="../css/about.css" >
+    
+  </head>
+  <body>
+   
     <section class="container">
-        <header>
-            <img class="logo" src="https://placehold.it/80x60/DDD" alt="">
-            <nav>
-            <a href="index.html">Home</a>
-            <a href="html/GitHelp.html">GitHelp</a>
-            <a href="html/GiveHelp.html">Volunteer!</a>
-            <a href="html/about.html">About Us</a>
-            <a href="html/contact.html">Contact Us</a>
-            </nav>
-        </header>
-        <main>
-            <div class ="about-section">
-                <h1>about us </h1>
-                <p>
-                    We are a helpful and fun team. Our goal is to help people <br> 
-                    with visual impairment by creating a web that facilitates <br>
-                    finding volunteers to help this large group in society <br>
-                </p>
+      <header>
+        <img
+          id="logo"
+          style="width: 120px; margin-left: 40px; margin-top: -5px"
+          src="../images/white.png"
+          alt=""
+        />
+        <nav id="return">
+          <a class="q" href="../index.html">Home</a>
+          <a class="q" href="../html/GitHelp.html">GitHelp</a>
+          <a class="q" href="../html/GiveHelp.html">Volunteer!</a>
+          <a class="q" href="#">About Us</a>
+          <a class="q" href="../html/contact.html">Contact Us</a>
+        </nav>
+      </header>
+      <main>
+        <!-------second nav--->
+        <div class="secondNav">
+          <div class="plus">
+            <input
+              type="button"
+              value="-"
+              onclick="decreaseFontSizeBy1px()"
+              class="sizingButton"
+            />
+            <p id="a">Font Size</p>
 
+            <input
+              type="button"
+              value="+"
+              onclick="increaseFontSizeBy1px()"
+              class="sizingButton"
+            />
+          </div>
+          <div>
+            <span>Dark Mode</span>
+            <label class="switch">
+              <input type="checkbox" onclick="DarkMode()" id="v1" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div>
+            <span>Light Mode</span>
+            <label class="switch">
+              <input type="checkbox" onclick="LightMode()" id="v2" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- about page information  -->
+        <div class="about-section">
+          <br>
+          <h1>ABOUT US</h1> <br>
+          <p>
+            We are a helpful and fun team. Our goal is to help people <br />
+            with visual impairment by creating a web that facilitates <br />
+            finding volunteers to help this large group in society <br />
+            <br> 
+          </p>
+        </div>
+        <!-- start-flip-card -->
+        <br>
+        <h2>Our Team</h2>
+        <br>
+        <section>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="../images/photo-team/sewar.jpeg"
+                  alt="imge" id="1"
+                  style="width: 300px; height: 300px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <br>
+                <h1>Sewar Maqableh</h1><br>
+                <p>Software Engineer <br> & <br> Software Developer</p><br>
+                <p class="fun">CATS GIRL </p>
+              </div>
             </div>
-            <h2>Our Team</h2>
-            <section >
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="../ahmad3.jpeg" alt="imge" style="width:300px;height:300px;">
-                      </div>
-                      <div class="flip-card-back">
-                        <h1>Ahmad Arman </h1> 
-                        <p>Civil Engineer & Software Developer </p> 
-                        <p>We love that guy</p>
-                      </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="../ahmad3.jpeg" alt="imge" style="width:300px;height:300px;">
-                      </div>
-                      <div class="flip-card-back">
-                        <h1>Aseel  </h1> 
-                        <p>Civil Engineer & Software Developer </p> 
-                        <p>We love that guy</p>
-                      </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="../ahmad3.jpeg" alt="imge" style="width:300px;height:300px;">
-                      </div>
-                      <div class="flip-card-back">
-                        <h1>Abdalrahman </h1> 
-                        <p>Civil Engineer & Software Developer </p> 
-                        <p>We love that guy</p>
-                      </div>
-                    </div>
-                </div>
-               
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="../images/photo-team/aseel.jpeg"
+                  alt="imge" id="2"
+                  style="width: 300px; height: 300px"
+                />
+              </div>
+              <div class="flip-card-back"> <br>
+                <h1>Aseel Farrar</h1>
+                <p>Computer Engineer <br> & <br> Software Developer</p> <br>
+                <p class="fun"> OBJECTION!</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="../images/photo-team/abed2.jpeg"
+                  alt="imge" id="3"
+                  style="width: 300px; height: 300px"
+                />
+              </div>
+              <div class="flip-card-back"> <br>
+                <h1>Abdalrahman Samara</h1><br>
+                <p>Mechanical Engineer <br> & <br> Software Developer</p> <br>
+                <p class="fun">MACHINE </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            </section>
-
-            <section >
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="../ahmad3.jpeg" alt="imge" style="width:300px;height:300px;">
-                      </div>
-                      <div class="flip-card-back">
-                        <h1> Emran </h1> 
-                        <p>Civil Engineer & Software Developer </p> 
-                        <p>We love that guy</p>
-                      </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="../ahmad3.jpeg" alt="imge" style="width:300px;height:300px;">
-                      </div>
-                      <div class="flip-card-back">
-                        <h1> Wafa'a </h1> 
-                        <p>Civil Engineer & Software Developer </p> 
-                        <p>We love that guy</p>
-                      </div>
-                    </div>
-
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="../ahmad3.jpeg" alt="imge" style="width:300px;height:300px;">
-                      </div>
-                      <div class="flip-card-back">
-                        <h1>Sewar</h1> 
-                        <p>Civil Engineer & Software Developer </p> 
-                        <p>We love that guy</p>
-                      </div>
-                    </div>
-                </div>
-               
-
-            </section>
-            
-           
-           
-            
-
-
-
-
-
-            
-            
-           
-
-        </main>
-        <footer>
-            <p>XXX Footer XXX</p>
-        </footer>
+        <section>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="../images/photo-team/emran.jpeg"
+                  alt="imge" id="4"
+                  style="width: 300px; height: 300px"
+                />
+              </div>
+              <div class="flip-card-back"> <br>
+                <h1>Emran Aloul</h1><br>
+                <p>Mechanical Engineer <br> & <br> Software Developer</p> <br>
+                <p class="fun">MUSCLE </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="../images/photo-team/wafa'a.jpeg"
+                  alt="imge" id="5"
+                  style="width: 300px; height: 300px"
+                />
+              </div>
+              <div class="flip-card-back"> <br>
+                <h1>Wafa'a</h1><br>
+                <p>Pharmacist <br> & <br> Software Developer</p> <br>
+                <p class="fun">KITTEN</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="../images/photo-team/ahmad3.jpeg"
+                  alt="imge" id="6"
+                  style="width: 300px; height: 300px"
+                />
+              </div>
+              <div class="flip-card-back"> <br>
+                <h1>Ahmad Arman</h1> <br>
+                <p>Software Engineer <br> & <br> Software Developer</p> <br>
+                <p class="fun">ALSHAYKH </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>
+          All Rights Reserved &copy; 2021 <br />
+          Fantastic VI
+        </p>
+      </footer>
     </section>
-</body>
+    <script src="../js/app.js"></script>
+  </body>
 </html>
-
-
- 
