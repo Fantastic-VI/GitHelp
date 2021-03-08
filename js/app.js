@@ -3,7 +3,7 @@ const MainConstructor = function (items) {
   this.items = items;
 };
 //this function is for adding items to the main items, so we can use it in multiple pages
-MainConstructor.prototype.addItem = function (name, phone , location , time , item) {
+MainConstructor.prototype.addItem = function (name, phone , location1 , location2 , location3, time , item , details) {
   const localPrevious = JSON.parse(localStorage.getItem('a')) || [];
   if(this.items.length === 0){
     for (let j = 0 ; j < localPrevious.length ; j++ ) {
@@ -11,16 +11,18 @@ MainConstructor.prototype.addItem = function (name, phone , location , time , it
       this.items.push(olditems);
     }
   }
-  const newItem = new Adding (name, phone , location , time , item);
+  const newItem = new Adding (name, phone , location1 , location2 , location3, time , item , details);
   this.items.push(newItem);
 };
-
-const Adding = function(name, phone , location , time , item) {
+const Adding = function(name, phone , location1 , location2 , location3, time , item , details) {
   this.name = name;
   this.phone = phone;
   this.item = item;
-  this.location = location;
+  this.location1 = location1;
+  this.location2 = location2;
+  this.location3 = location3;
   this.time = time;
+  this.details = details;
 };
 // this code is for adding to the main scroll in both the GitHelp and GiveHelp pages
 const Help = function(typeOfHelp) {
@@ -37,12 +39,9 @@ function generateList () {
   new Help ( 'Deliver' );
 }
 generateList();
-
-
 MainConstructor.prototype.saveToLocalStorage = function() {
   localStorage.setItem('a', JSON.stringify(this.items));
 };
-
 MainConstructor.prototype.fillTheList = function (listItem) {
   for (let i = 0 ; i < Help.all.length ; i++) {
     const help = document.createElement('option');
@@ -51,14 +50,10 @@ MainConstructor.prototype.fillTheList = function (listItem) {
     help.textContent = Help.all[i].name;
   }
 };
-
 MainConstructor.prototype.removeItem = function (num) {
   this.items.splice(num, 1);
   console.log(num);
 };
-
-
-
 /*start of font sizing*/
 function decreaseFontSizeBy1px() {
   let txt = document.querySelector('body');
@@ -71,10 +66,8 @@ function increaseFontSizeBy1px() {
   let style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
   let currentSize = parseFloat(style);
   txt.style.fontSize = (currentSize + 1) + 'px';
-
 }
 /*end of font sizing*/
-
 /*start of color contrast*/
 let ult = false;
 let bool = true;
@@ -111,16 +104,15 @@ function DarkMode() {
   element2.classList.toggle('dark-mode');
   element3.classList.toggle('dark-mode');
   if (bool === true) {
-    document.querySelector('img').style.filter = 'drop-shadow(8px 8px 10px gray)';
+    let imagesCount = document.querySelectorAll('img'); /* ) .style.filter = 'drop-shadow(8px 8px 10px gray)'; */
+    for (let i in imagesCount.length){}
     bool = false;
   }
   else {
     bool = true;
     document.querySelector('img').style.filter = 'none';
   }
-
 }
-
 let bool2 = true;
 function LightMode() {
   if (document.getElementById('v1').checked){
@@ -149,27 +141,18 @@ function LightMode() {
   }
   document.getElementById('logo').src = '../images/white.png';
 }
-
 /*end of color contrast*/
-
-
-
 /* */
-let currentSlide = 0;
+/* let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot');
-
+const dots = document.querySelectorAll('.dot'); */
 // const dotesContainer = document.getElementById('dotesContainer');
-
 // for(let i = 0; slides.length; i ++){
 // const dotElement = document.createElement('span');
 // dotesContainer.appendChild(dotElement);
 // dotElement.class = 'dot';
 // }
-
-
-
-const init = (n) => {
+/* const init = (n) => {
   slides.forEach((slide, index) => {
     slide.style.display = 'none';
     dots.forEach((dot, index) => {
@@ -184,21 +167,15 @@ const next = () => {
   currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++;
   init(currentSlide);
 };
-
 const prev = () => {
   currentSlide <= 0 ? currentSlide = slides.length - 1 : currentSlide--;
   init(currentSlide);
 };
-
 document.querySelector('.next').addEventListener('click', next);
-
 document.querySelector('.prev').addEventListener('click', prev);
-
-
 setInterval(() => {
   next();
 }, 7000);
-
 dots.forEach((dot, i) => {
   dot.addEventListener('click', () => {
     console.log(currentSlide);
@@ -206,3 +183,4 @@ dots.forEach((dot, i) => {
     currentSlide = i;
   });
 });
+ */
