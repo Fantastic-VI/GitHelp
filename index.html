@@ -13,18 +13,17 @@
 <body>
     <section class="container">
         <header>
-            <img id="logo" style="width:120px; margin-left: 40px; margin-top: -5px" src="./images/white.png" alt="">
+            <img id="logo" style="width:120px; margin-left: 40px; margin-top: -5px" src="./images/white.png" alt="Logo for this website called gitHelp">
             <nav id="return">
-                <a class="q" href="index.html">Home</a>
-                <a class="q" href="html/GitHelp.html">GitHelp</a>
-                <a class="q" href="html/GiveHelp.html">Volunteer!</a>
-                <a class="q" href="html/about.html">About Us</a>
-                <a class="q" href="html/contact.html">Contact Us</a>
+                <a class="q" href="#">Home</a>
+                <a class="q" href="html/GitHelp.html" target="_blank">GitHelp</a>
+                <a class="q" href="html/GiveHelp.html" target="_blank">Volunteer!</a>
+                <a class="q" href="html/about.html" target="_blank">About Us</a>
+                <a class="q" href="html/contact.html" target="_blank">Contact Us</a>
             </nav>
 
         </header>
         <main>
-            <!-------second nav--->
             <div class="secondNav">
                 <div class="plus">
                     <input type="button" value="-" onclick="decreaseFontSizeBy1px()" class="sizingButton">
@@ -50,48 +49,37 @@
                 </div>
             </div>
 
-            <!--Slider Images-->
+            <p class="welcome">Welcome to the GitHelp</p>
+            <p class="Intro">
+                The GitHelp Website it's completely free. This website is your gateway to the entire collection in one
+                place: Reading, Recording, Psychologic – there is so much to access, Join and enjoy. Welcome!</p>
+
+
             <div class="slide-container">
                 <div class="slide fade">
-                    <img src='./images/1.jpeg' alt=''>
+                    <img id="1" src='./images/img1.jpg' alt='Low Vision person using CCTV (closed circuit television) '>
                 </div>
                 <div class="slide fade">
-                    <img src='./images/2.jpeg' alt=''>
+                    <img id="2" src='./images/img2.jpg' alt='A blind person is sensing to prominent letters to read them '>
                 </div>
                 <div class="slide fade">
-                    <img src='./images/3.jpeg' alt=''>
+                    <img id="3" src='./images/img3.jpg' alt='Some educational games for children with visual impairment '>
                 </div>
                 <div class="slide fade">
-                    <img src='./images/4.jpeg' alt=''>
+                    <img id="4" src='./images/img4.jpg' alt='Blind reads the name of the drug written in Braille '>
                 </div>
                 <div class="slide fade">
-                    <img src='./images/GitHelp (10).png' alt=''>
+                    <img id="5" src='./images/img5.jpg' alt='A woman accompanies a blind person crossing the road '>
                 </div>
                 <div class="slide fade">
-                    <img src='./images/GitHelp (11).png' alt=''>
+                    <img id="6" src='./images/img6.jpg' alt='The elevator floor numbers are numbered in Braille '>
                 </div>
                 <div class="slide fade">
-                    <img src='./images/GitHelp (2).png' alt=''>
+                    <img id="7" src='./images/img7.jpg' alt='Some educational games for children with visual impairment '>
                 </div>
                 <div class="slide fade">
-                    <img src='./images/GitHelp (3).png' alt=''>
+                    <img id="8" src='./images/img8.jpg' alt='Normal Person A blind person knows where the air conditioner controller is. '>
                 </div>
-                <div class="slide fade">
-                    <img src='./images/GitHelp.png' alt=''>
-                </div>
-                <div class="slide fade">
-                    <img src='https://images.unsplash.com/photo-1588807308097-fb6e5047df8c?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
-                        alt=''>
-                </div>
-                <div class="slide fade">
-                    <img src='https://images.unsplash.com/photo-1589808710416-24cf7ac026f2?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
-                        alt=''>
-                </div>
-                <div class="slide fade">
-                    <img src='https://images.unsplash.com/photo-1588796388882-a4d533c47e5e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
-                        alt=''>
-                </div>
-
                 <a href="#" class="prev" title="Previous">&#10094</a>
                 <a href="#" class="next" title="Next">&#10095</a>
             </div>
@@ -104,31 +92,15 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+
             </div>
 
-            <!--General Description About The Site-->
-            <p>XXX Introduction XXX</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, asperiores consequatur corrupti,
-                suscipit nobis ipsum fugit nemo, error magnam molestiae quo. Minima, distinctio nesciunt architecto
-                magnam voluptates voluptatum necessitatibus veritatis!</p>
+            <h1 class="tenTipsTilte">10 TIPS FOR COMMUNICATING WITH SOMEONE WITH SIGHT LOSS</h1>
+            <hr>
 
-               <!--Short Video Of Success Story-->
-               <div class="successStory">
-                <!-- <p>XXX Video: Success Story XXXX</p> -->
-                <iframe width="753" height="400" src="https://www.youtube.com/embed/gAJXpShS6Oc" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-
-            <!--Ten Tips-->
-            <section class="listAndVolunteersImg">
+            <section>
                 <div>
-                    <h1>10 TIPS FOR COMMUNICATING WITH SOMEONE WITH SIGHT LOSS</h1>
-                    <ol>
+                    <ul class="tenTips">
                         <li>IS ID yourself when you're coming in and out and going down to a room, say hello and say
                             goodbye and introduce your name.</li>
                         <li>Ask about their level of sight you don't know how much support they need until you know how
@@ -144,19 +116,20 @@
                             everyday language to just be normal basically.</li>
                         <li>A third person. When out in a group and you see a VI, don't go through somebody else to
                             speak to them, speak to them directly. </li>
-                        <li>Relax yourself.</li>
                         <li>On the same sort of tilt use normal body language, so even if somebody can't see that you're
                             gesturing your hands around like I do or making eye contact, then still do that because that
                             will mean that the way you talk is more natural.</li>
                         <li>Explain loud noises that may startle a person, such as building works or alarms.</li>
-                    </ol>
-                </div>
-                <!--Images For Volunteers While Working With Visual Impairment -->
-                <div class="volunteersImgs">
-                    <img src="https://placehold.it/300x350/DDD" alt="">
-                    <img src="https://placehold.it/300x350/DDD" alt="">
+                        <li style="padding-left: 35%;">Relax yourself.</li>
+                    </ul>
                 </div>
             </section>
+
+            <div class="successStory">
+                <iframe width="753" height="400" src="https://www.youtube.com/embed/gAJXpShS6Oc" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
 
 
         </main>
@@ -165,7 +138,7 @@
         </footer>
     </section>
     <script src="js/app.js"></script>
-
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
