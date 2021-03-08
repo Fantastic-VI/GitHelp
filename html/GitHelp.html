@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHelp</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/GitHelp.css">
-    
 </head>
 
 <body>
-<section class="container">
-    <header>
-        <img class="logo" src="https://placehold.it/80x60/DDD" alt="">
-        <nav>
-        <a href="index.html">Home</a>
-        <a href="html/GitHelp.html">GitHelp</a>
-        <a href="html/GiveHelp.html">Volunteer!</a>
-        <a href="html/about.html">About Us</a>
-        <a href="html/contact.html">Contact Us</a>
-        </nav>
-        
-    </header>
-    <main>
+    <section class="container">
+        <header>
+            <img id="logo" style="width:120px; margin-left: 40px; margin-top: -5px" src="../images/white.png" alt="">
+            <nav id="return">
+                <a class="q" href="index.html">Home</a>
+                <a class="q" href="html/GitHelp.html">GitHelp</a>
+                <a class="q" href="html/GiveHelp.html">Volunteer!</a>
+                <a class="q" href="html/about.html">About Us</a>
+                <a class="q" href="html/contact.html">Contact Us</a>
+            </nav>
+
+        </header>
+        <main>
+            <!-------second nav--->
+            <div class="secondNav">
+                <div class="plus">
+                    <input type="button" value="-" onclick="decreaseFontSizeBy1px()" class="sizingButton">
+                    <p id="a">Font Size</p>
+
+                    <input type="button" value="+" onclick="increaseFontSizeBy1px()" class="sizingButton">
+                </div>
+                <div>
+                    <span>Dark Mode</span>
+                    <label class="switch">
+
+                        <input type="checkbox" onclick="DarkMode()" id="v1">
+                        <span class="slider round"></span>
+
+                    </label>
+                </div>
+                <div>
+                    <span>Light Mode</span>
+                    <label class="switch">
+                        <input type="checkbox" onclick="LightMode()" id="v2">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
     <h1>Enter your information</h1> <br>
     <form id="form">
         <fieldset>
@@ -65,7 +90,7 @@
     <script src="../js/GitHelp.js"></script>
 </main>
 <footer>
-    <p>XXX Footer XXX</p>
+    <p>All Rights Reserved &copy; 2021 <br> Fantastic VI </p>
 </footer>
 </body>
 </html>
