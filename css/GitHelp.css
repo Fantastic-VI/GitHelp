@@ -282,7 +282,7 @@ input[type=text], select {
   }
   legend
   {
-      color:darkgreen;
+     color:rgb(121, 118, 118);
       font-size: larger;
       font-family: Arial, Helvetica, sans-serif;
   }

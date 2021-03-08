@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 1160px;
+    margin: auto;
+    background-color: beige;
+}
+
+.container {
+    display: grid;
+    width : 100%;
+    grid-template-rows: 100px minmax(100px,1fr) 100px;
+    gap: 0px;
+}
+
+main {
+    width: 82.75%;
+    margin: auto;
+    font-family: 'Merriweather', serif;
+    word-spacing: 10px;
+    line-height: 1.6;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    justify-content: space-between;
+    border-style:  solid;
+    border-width: thin;
+    border-color: #ddd;
+    word-spacing: 0px;
+    border-top: none;
+    /* background-color: rgb(248, 248, 232); */
+
+}
+
+header nav a {
+    font-family: comic sans ms;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bolder;
+    color : black;
+    text-shadow: -1px 1px 0 #fff,
+          1px 1px 0 #fff,
+          1px -1px 0 #fff,
+          -1px -1px 0 #fff;
+}
+header nav {
+    display: grid;
+    grid-template-columns: 0.7fr 0.8fr 1fr 1fr 0.85fr;
+}
+
+.listAndVolunteersImg {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+ol li {
+    margin: 15px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+    border-style: solid;
+    border-width: thin;
+    border-color: #ddd;
+    font-family: comic sans ms;
+    line-height: 1.5;
+    border-bottom: none;
+}
+
+
+  /* Dark mode Begin */
+  .dark-mode {
+    background-color: black;
+    color: white;
+    
+  }
+
+  /* Light mode Begin */
+  .Light-mode {
+    background-color: white;
+    color: black;
+  }
+
+  /* toggle buttons Begin*/
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+   /* toggle buttons End*/
+
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+    /* Rounded sliders */
+
+    .secondNav {
+
+        width:1fr; 
+        border-bottom: grey 2px solid;
+        align-items: center;
+       display: flex;
+       justify-content: center; 
+       padding: 10px 0px;
+       margin: 10px 0px;
+       justify-content: space-around;
+    }
+    .sizingButton {
+        padding: 5px 10px;
+  
+    }
+    .plus {
+      display: flex;
+      width: 20%;
+      justify-content: space-between;
+    }
+    .org1
+    {
+        margin-top: 55px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+       font-size: larger;
+    }
+    .org2
+    {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+       font-size: larger;
+    }
+.org3
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+       font-size: larger;
+}
+.org4
+{
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+       font-size: larger;
+}
+  a:hover{
+     color: blue;
+     background-color: rgb(203, 242, 243);
+     
+   
+    }
+    .loc1
+    {
+        font-size: larger;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    a{
+        text-decoration: none;
+        font-style: italic;
+    }
+.info1
+{
+    font-weight: bold;
+}
+    article
+    {
+        text-indent: 20px;
+        margin-top: 48px;
+    }
+    #article2
+    {
+        text-indent: 20px;
+        display: flex;
+    }
+ .tel2
+ {
+     font-weight: bold;
+ }
+ .tel3
+ {
+    font-weight: bold;
+ }
+ .info2
+ {
+    font-weight: bold;
+ }
+
+ ol {
+	list-style:upper-alpha;
+}
