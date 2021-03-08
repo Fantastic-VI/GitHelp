@@ -49,48 +49,62 @@
                     </label>
                 </div>
             </div>
-    <h1>Enter your information</h1> <br>
-    <form id="form">
-        <fieldset>
-            <legend>Information </legend>
-            <label>
-                <span>Select the type of service</span>
-                <select id="items"></select>
-            </label>
-            <br>
-            <br>
-            <label>
-                <span>Name</span>
-                <input type="text" id="name">
-            </label>
-            <br>
-            <br>
-            <label>
-                <span >Phone number</span>
-                <input class="phone" type="number" id="phone">
-            </label>
-            <br>
-            <br>
-            <label>
-                <span class="display">Date and Time of Service</span>
-                <input type="text" id = "time">
-            </label>
-            <br>
-            <br>
-            <label>
-                <span>Location</span>
-                <input type="text" id="location">
-            </label>
-            <br>
-            <br>
-            <input type="submit" value="Submit">
-        </fieldset>
-    </form>
-    <script src="../js/app.js"></script>
-    <script src="../js/GitHelp.js"></script>
-</main>
-<footer>
-    <p>All Rights Reserved &copy; 2021 <br> Fantastic VI </p>
-</footer>
+            <h1>Enter your information</h1> <br>
+            <form id="form">
+                <fieldset>
+                    <legend>Information </legend>
+                    <label>
+                        <span>Select the type of service</span>
+                        <select id="items"></select>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        <span>Name <span style="color: red; font-size: 60%;">*required</span></span>
+                        <input type="text" id="name" required placeholder="Please enter your name">
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        <span>Phone number <span style="color: red; font-size: 60%;">*required</span>
+                        </span>
+                        <input class="phone" type="tel" id="phone" required pattern="[0-9]{10}"
+                            placeholder="Enter you phone number, it should consist of 10 Digits">
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        <span class="display">Date and Time of Service <span
+                                style="color: red; font-size: 60%;">*required</span></span>
+                        <input type="datetime-local" id="time" required>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        <span>Location of service<span style="color: red; font-size: 60%;">*required</span></span> <br>
+                        <input type="text" id="location1" required placeholder="Please Enter the city"
+                            style="width: 30%;">
+                        <input type="text" id="location2" required placeholder="Street" style="width: 30%;">
+                        <input type="text" id="location3" required placeholder="Building" style="width: 30%;">
+                        <br>
+                    </label>
+                    <label>
+                        <span>Details <span style="color: red; font-size: 60%;">*required</span></span>
+                        <input type="text" id="details" required placeholder="Do you have any other details?">
+                    </label>
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+
+
+        </main>
+
+        <footer>
+            <p>All Rights Reserved &copy; 2021 <br> Fantastic VI </p>
+        </footer>
+        <script src="../js/app.js"></script>
+        <script src="../js/GitHelp.js"></script>
 </body>
 </html>
