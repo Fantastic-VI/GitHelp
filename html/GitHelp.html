@@ -1,71 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHelp</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/GitHelp.css">
-    
 </head>
 
 <body>
-<section class="container">
-    <header>
-        <img class="logo" src="https://placehold.it/80x60/DDD" alt="">
-        <nav>
-        <a href="index.html">Home</a>
-        <a href="html/GitHelp.html">GitHelp</a>
-        <a href="html/GiveHelp.html">Volunteer!</a>
-        <a href="html/about.html">About Us</a>
-        <a href="html/contact.html">Contact Us</a>
-        </nav>
-        
-    </header>
-    <main>
-    <h1>Enter your information</h1> <br>
-    <form id="form">
-        <fieldset>
-            <legend>Information </legend>
-            <label>
-                <span>Select the type of service</span>
-                <select id="items"></select>
-            </label>
-            <br>
-            <br>
-            <label>
-                <span>Name</span>
-                <input type="text" id="name">
-            </label>
-            <br>
-            <br>
-            <label>
-                <span >Phone number</span>
-                <input class="phone" type="number" id="phone">
-            </label>
-            <br>
-            <br>
-            <label>
-                <span class="display">Date and Time of Service</span>
-                <input type="text" id = "time">
-            </label>
-            <br>
-            <br>
-            <label>
-                <span>Location</span>
-                <input type="text" id="location">
-            </label>
-            <br>
-            <br>
-            <input type="submit" value="Submit">
-        </fieldset>
-    </form>
-    <script src="../js/app.js"></script>
-    <script src="../js/GitHelp.js"></script>
-</main>
-<footer>
-    <p>XXX Footer XXX</p>
-</footer>
+    <section class="container">
+        <header>
+            <img id="logo" style="width:120px; margin-left: 40px; margin-top: -5px" src="../images/white.png" alt="">
+            <nav id="return">
+                <a class="q" href="index.html">Home</a>
+                <a class="q" href="html/GitHelp.html">GitHelp</a>
+                <a class="q" href="html/GiveHelp.html">Volunteer!</a>
+                <a class="q" href="html/about.html">About Us</a>
+                <a class="q" href="html/contact.html">Contact Us</a>
+            </nav>
+
+        </header>
+        <main>
+            <!-------second nav--->
+            <div class="secondNav">
+                <div class="plus">
+                    <input type="button" value="-" onclick="decreaseFontSizeBy1px()" class="sizingButton">
+                    <p id="a">Font Size</p>
+
+                    <input type="button" value="+" onclick="increaseFontSizeBy1px()" class="sizingButton">
+                </div>
+                <div>
+                    <span>Dark Mode</span>
+                    <label class="switch">
+
+                        <input type="checkbox" onclick="DarkMode()" id="v1">
+                        <span class="slider round"></span>
+
+                    </label>
+                </div>
+                <div>
+                    <span>Light Mode</span>
+                    <label class="switch">
+                        <input type="checkbox" onclick="LightMode()" id="v2">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <h1>Enter your information</h1> <br>
+            <form id="form">
+                <fieldset>
+                    <legend>Information </legend>
+                    <label>
+                        <span>Select the type of service</span>
+                        <select id="items"></select>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        <span>Name <span style="color: red; font-size: 60%;">*required</span></span>
+                        <input type="text" id="name" required placeholder="Please enter your name">
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        <span>Phone number <span style="color: red; font-size: 60%;">*required</span>
+                        </span>
+                        <input class="phone" type="tel" id="phone" required pattern="[0-9]{10}"
+                            placeholder="Enter you phone number, it should consist of 10 Digits">
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        <span class="display">Date and Time of Service <span
+                                style="color: red; font-size: 60%;">*required</span></span>
+                        <input type="datetime-local" id="time" required>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        <span>Location of service<span style="color: red; font-size: 60%;">*required</span></span> <br>
+                        <input type="text" id="location1" required placeholder="Please Enter the city"
+                            style="width: 30%;">
+                        <input type="text" id="location2" required placeholder="Street" style="width: 30%;">
+                        <input type="text" id="location3" required placeholder="Building" style="width: 30%;">
+                        <br>
+                    </label>
+                    <label>
+                        <span>Details <span style="color: red; font-size: 60%;">*required</span></span>
+                        <input type="text" id="details" required placeholder="Do you have any other details?">
+                    </label>
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+<div id='animations' style="visibility: hidden;">
+    <h1 >Your request has been successfully accepted</h1>
+</div>
+
+        </main>
+
+        <footer>
+            <p>All Rights Reserved &copy; 2021 <br> Fantastic VI </p>
+        </footer>
+        <script src="../js/app.js"></script>
+        <script src="../js/GitHelp.js"></script>
 </body>
 </html>

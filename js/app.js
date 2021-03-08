@@ -14,7 +14,6 @@ MainConstructor.prototype.addItem = function (name, phone , location1 , location
   const newItem = new Adding (name, phone , location1 , location2 , location3, time , item , details);
   this.items.push(newItem);
 };
-
 const Adding = function(name, phone , location1 , location2 , location3, time , item , details) {
   this.name = name;
   this.phone = phone;
@@ -40,12 +39,9 @@ function generateList () {
   new Help ( 'Deliver' );
 }
 generateList();
-
-
 MainConstructor.prototype.saveToLocalStorage = function() {
   localStorage.setItem('a', JSON.stringify(this.items));
 };
-
 MainConstructor.prototype.fillTheList = function (listItem) {
   for (let i = 0 ; i < Help.all.length ; i++) {
     const help = document.createElement('option');
@@ -54,14 +50,10 @@ MainConstructor.prototype.fillTheList = function (listItem) {
     help.textContent = Help.all[i].name;
   }
 };
-
 MainConstructor.prototype.removeItem = function (num) {
   this.items.splice(num, 1);
   console.log(num);
 };
-
-
-
 /*start of font sizing*/
 function decreaseFontSizeBy1px() {
   let txt = document.querySelector('body');
@@ -74,10 +66,8 @@ function increaseFontSizeBy1px() {
   let style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
   let currentSize = parseFloat(style);
   txt.style.fontSize = (currentSize + 1) + 'px';
-
 }
 /*end of font sizing*/
-
 /*start of color contrast*/
 let ult = false;
 let bool = true;
@@ -122,9 +112,7 @@ function DarkMode() {
     bool = true;
     document.querySelector('img').style.filter = 'none';
   }
-
 }
-
 let bool2 = true;
 function LightMode() {
   if (document.getElementById('v1').checked){
@@ -153,5 +141,4 @@ function LightMode() {
   }
   document.getElementById('logo').src = '../images/white.png';
 }
-
 /*end of color contrast*/
