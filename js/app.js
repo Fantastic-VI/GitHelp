@@ -3,7 +3,7 @@ const MainConstructor = function (items) {
   this.items = items;
 };
 //this function is for adding items to the main items, so we can use it in multiple pages
-MainConstructor.prototype.addItem = function (name, phone , location , time , item) {
+MainConstructor.prototype.addItem = function (name, phone , location1 , location2 , location3, time , item , details) {
   const localPrevious = JSON.parse(localStorage.getItem('a')) || [];
   if(this.items.length === 0){
     for (let j = 0 ; j < localPrevious.length ; j++ ) {
@@ -11,16 +11,19 @@ MainConstructor.prototype.addItem = function (name, phone , location , time , it
       this.items.push(olditems);
     }
   }
-  const newItem = new Adding (name, phone , location , time , item);
+  const newItem = new Adding (name, phone , location1 , location2 , location3, time , item , details);
   this.items.push(newItem);
 };
 
-const Adding = function(name, phone , location , time , item) {
+const Adding = function(name, phone , location1 , location2 , location3, time , item , details) {
   this.name = name;
   this.phone = phone;
   this.item = item;
-  this.location = location;
+  this.location1 = location1;
+  this.location2 = location2;
+  this.location3 = location3;
   this.time = time;
+  this.details = details;
 };
 // this code is for adding to the main scroll in both the GitHelp and GiveHelp pages
 const Help = function(typeOfHelp) {
@@ -111,7 +114,8 @@ function DarkMode() {
   element2.classList.toggle('dark-mode');
   element3.classList.toggle('dark-mode');
   if (bool === true) {
-    document.querySelector('img').style.filter = 'drop-shadow(8px 8px 10px gray)';
+    let imagesCount = document.querySelectorAll('img'); /* ) .style.filter = 'drop-shadow(8px 8px 10px gray)'; */
+    for (let i in imagesCount.length){}
     bool = false;
   }
   else {
@@ -151,58 +155,3 @@ function LightMode() {
 }
 
 /*end of color contrast*/
-
-
-
-/* */
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot');
-
-// const dotesContainer = document.getElementById('dotesContainer');
-
-// for(let i = 0; slides.length; i ++){
-// const dotElement = document.createElement('span');
-// dotesContainer.appendChild(dotElement);
-// dotElement.class = 'dot';
-// }
-
-
-
-const init = (n) => {
-  slides.forEach((slide, index) => {
-    slide.style.display = 'none';
-    dots.forEach((dot, index) => {
-      dot.classList.remove('active');
-    });
-  });
-  slides[n].style.display = 'block';
-  dots[n].classList.add('active');
-};
-document.addEventListener('DOMContentLoaded', init(currentSlide));
-const next = () => {
-  currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++;
-  init(currentSlide);
-};
-
-const prev = () => {
-  currentSlide <= 0 ? currentSlide = slides.length - 1 : currentSlide--;
-  init(currentSlide);
-};
-
-document.querySelector('.next').addEventListener('click', next);
-
-document.querySelector('.prev').addEventListener('click', prev);
-
-
-setInterval(() => {
-  next();
-}, 7000);
-
-dots.forEach((dot, i) => {
-  dot.addEventListener('click', () => {
-    console.log(currentSlide);
-    init(i);
-    currentSlide = i;
-  });
-});
