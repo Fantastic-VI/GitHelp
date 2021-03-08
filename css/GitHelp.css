@@ -270,8 +270,8 @@ input[type=text], select {
     border-top: solid;
     border-right: solid;
     border-left: solid;
-    border-bottom:solid;
-    border-color: black;
+    border-bottom: thin;
+    border-color: rgb(121, 118, 118);
     border-style: solid;
     padding: 50px 30px
   }
@@ -282,7 +282,7 @@ input[type=text], select {
   }
   legend
   {
-      color: black;
+      color:darkgreen;
       font-size: larger;
       font-family: Arial, Helvetica, sans-serif;
   }

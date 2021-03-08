@@ -28,4 +28,5 @@ function addSelectedService () {
   let time = event.target.time.value;
   let phone = Number( event.target.phone.value );
   a.addItem(name, phone , location , time , item);
+  setTimeout(function(){location.reload(); } , 3000);
 }
