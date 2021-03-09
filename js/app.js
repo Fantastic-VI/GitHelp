@@ -70,11 +70,14 @@ function increaseFontSizeBy1px() {
 /*end of font sizing*/
 /*start of color contrast*/
 let ult = false;
+let ult2 = false;
 let bool = true;
 let imageStatus = true;
 function DarkMode() {
+  let imagesCount = document.querySelectorAll('img');
   if ( document.getElementById('v2').checked === true){
     ult = document.getElementById('v2').checked;
+    ult2 = document.getElementById('v2').checked;
     document.getElementById('v2').checked = false;
     let element7 = document.body;
     let element8 = document.querySelector('header');
@@ -82,7 +85,10 @@ function DarkMode() {
     element7.classList.toggle('Light-mode');
     element8.classList.toggle('Light-mode');
     element9.classList.toggle('Light-mode');
-    document.querySelector('img').style.filter = 'none';
+    bool = true;
+    for (let i = 1 ; i < imagesCount.length ; i++){
+      document.getElementById(i).style.filter = 'none';
+    }
   }
   let element = document.body;
   let element2 = document.querySelector('header');
@@ -104,17 +110,21 @@ function DarkMode() {
   element2.classList.toggle('dark-mode');
   element3.classList.toggle('dark-mode');
   if (bool === true) {
-    let imagesCount = document.querySelectorAll('img'); /* ) .style.filter = 'drop-shadow(8px 8px 10px gray)'; */
-    for (let i in imagesCount.length){}
+    for (let i = 1 ; i < imagesCount.length ; i++){
+      document.getElementById(i).style.filter = 'drop-shadow(8px 8px 10px gray)';
+    }
     bool = false;
   }
   else {
     bool = true;
-    document.querySelector('img').style.filter = 'none';
+    for (let i = 1 ; i < imagesCount.length ; i++){
+      document.getElementById(i).style.filter = 'none';
+    }
   }
 }
 let bool2 = true;
 function LightMode() {
+  let imagesCount1 = document.querySelectorAll('img');
   if (document.getElementById('v1').checked){
     document.getElementById('v1').checked = false;
     let element4 = document.body;
@@ -124,6 +134,10 @@ function LightMode() {
     element5.classList.toggle('dark-mode');
     element6.classList.toggle('dark-mode');
     document.querySelector('img').style.filter = 'none';
+    bool2 = true;
+    for (let i = 1 ; i < imagesCount1.length ; i++){
+      document.getElementById(i).style.filter = 'none';
+    }
   }
   let element = document.body;
   let element2 = document.querySelector('header');
@@ -132,12 +146,16 @@ function LightMode() {
   element2.classList.toggle('Light-mode');
   element3.classList.toggle('Light-mode');
   if (bool2 === true) {
-    document.querySelector('img').style.filter = 'contrast(200%)';
+    for (let i = 1 ; i < imagesCount1.length ; i++){
+      document.getElementById(i).style.filter = 'contrast(200%)';
+    }
     bool2 = false;
   }
   else {
     bool2 = true;
-    document.querySelector('img').style.filter = 'none';
+    for (let i = 1 ; i < imagesCount1.length ; i++){
+      document.getElementById(i).style.filter = 'none';
+    }
   }
   document.getElementById('logo').src = '../images/white.png';
 }
