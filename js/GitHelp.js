@@ -27,6 +27,10 @@ function addSelectedService () {
   let time = event.target.time.value;
   let phone = Number( event.target.phone.value );
   let details = event.target.details.value;
+  if(details === '')
+  {
+    details = 'No Details';
+  }
   a.addItem(name, phone , location1 , location2 , location3 , time , item , details);
   document.getElementById('animations').style.visibility = 'visible';
   setTimeout(function(){location.reload(); } , 3000);

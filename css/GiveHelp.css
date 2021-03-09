@@ -1,21 +1,19 @@
-
-
-
+main{
+  word-spacing: 1px;
+}
 #table {
     border-collapse: collapse;
     margin: auto;
     width: 100%;
   }
-  
   #table thead tr th {
     color: black;
     border-bottom: 3px solid #062f4f;
     font-weight: bold;
     padding: .5em 1em;
     height: 60px;
+    word-spacing: 0px;
   }
-  
-  
   #table tr td {
     border-bottom: 1px solid #062f4f;
     border-collapse: none;
@@ -25,12 +23,10 @@
     width: auto;
     height: 50px;
   }
-
   #table tr td img{
     height: 40px;
     width: 40px;
   }
-  
   #table tr td:last-child {
     color: red;
     cursor: pointer;
@@ -38,13 +34,10 @@
   tr {
     align-items: center;
   }
-  
  h1{
    font-size: larger;
    font-weight: bold;
-   margin-top: 10px;
  }
-
  #span1{
    margin-right: 20px;
  }
@@ -54,8 +47,14 @@
    padding: 13px 30px;
    background-color: green;
    color: white;
-   border-radius: 2px;
+   border-radius: 7px;
  }
+ #input1:hover {background-color: #3e8e41}
+ #input1:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
  #label1{
    font-size: larger;
  }
@@ -63,17 +62,13 @@
    padding: 10px ;
  }
  #div1{
-  border: 2px gray groove;
   margin-bottom: 30px;
   padding-left: 20px;
   line-height: 60px;
   border-radius: 10px;
   margin-top: 40px;
  }
-
- 
-
-#volData input[type=text], input[type=number]{
+#volData input[type=text], input[type=tel]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -82,7 +77,6 @@
     border-radius: 4px;
     box-sizing: border-box;
 }
-
 #enterData fieldset{
   border: 2px black groove;
   padding: 20px;
@@ -101,10 +95,15 @@
   cursor: pointer;
   font-size: larger;
 }
-
-
-
-
+main form fieldset{
+  border: 2px gray groove;
+  align-items: center;
+  padding-left: 20px;
+}
+.container{
+  display: grid;
+  gap: 0px;
+}
 #alert h1 {
   animation: text-shadow 1.5s ease-in-out infinite;
   font-size: 5em;
@@ -113,11 +112,9 @@
   color: rgb(198, 43, 226);
   text-align: center;
 }
-
 #alert h1:hover {
   animation-play-state: paused;
 }
-
 @keyframes text-shadow {
   0% {  
     transform: translateY(0);
@@ -127,7 +124,6 @@
         0 0 0 #fb203b, 
         0 0 0 #fefc4b;
 }
-
 20% {  
     transform: translateY(0.25em);
     text-shadow: 
@@ -136,7 +132,6 @@
         0 -0.125em 0 #fb203b, 
         0 -0.25em 0 #fefc4b;
 }
-
 40% {  
     transform: translateY(0.5em);
     text-shadow: 
@@ -145,7 +140,6 @@
         0 0.0625em 0 #fb203b, 
         0 0.125em 0 #fefc4b;
 }
-
 60% {
     transform: translateY(0.25em);
     text-shadow: 
@@ -154,7 +148,6 @@
         0 -0.03125em 0 #fb203b, 
         0 -0.0625em 0 #fefc4b;
 }
-
 80% {  
     transform: translateY(0);
     text-shadow: 
@@ -163,9 +156,7 @@
         0 0 0 #fb203b, 
         0 0 0 #fefc4b;
 }
-  
 }
-
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;

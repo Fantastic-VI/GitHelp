@@ -69,94 +69,68 @@ function increaseFontSizeBy1px() {
 }
 /*end of font sizing*/
 /*start of color contrast*/
-let ult = false;
-let ult2 = false;
-let bool = true;
-let imageStatus = true;
+
+
 function DarkMode() {
+  let el = document.getElementById('normal');
+  // let element = document.body;
+  // let element2 = document.querySelector('header');
+  // let element3 = document.querySelector('footer');
   let imagesCount = document.querySelectorAll('img');
-  if ( document.getElementById('v2').checked === true){
-    ult = document.getElementById('v2').checked;
-    ult2 = document.getElementById('v2').checked;
-    document.getElementById('v2').checked = false;
-    let element7 = document.body;
-    let element8 = document.querySelector('header');
-    let element9 = document.querySelector('footer');
-    element7.classList.toggle('Light-mode');
-    element8.classList.toggle('Light-mode');
-    element9.classList.toggle('Light-mode');
-    bool = true;
+  if ( document.getElementById('v1').checked === true) {
+    document.getElementsByClassName('switch')[1].style.visibility = 'hidden';
+    document.getElementsByClassName('DL')[1].style.visibility = 'hidden';
+    document.getElementById('logo').src = '../images/black.png';
+    // element.classList.toggle('dark-mode');
+    // element2.classList.toggle('dark-mode');
+    // element3.classList.toggle('dark-mode');
     for (let i = 1 ; i < imagesCount.length ; i++){
-      document.getElementById(i).style.filter = 'none';
+      document.getElementById(i).style.filter = 'grayscale(100%)';
     }
+    el.href = 'css/black.css';
   }
-  let element = document.body;
-  let element2 = document.querySelector('header');
-  let element3 = document.querySelector('footer');
-  if (imageStatus === true){
-    document.getElementById('logo').src = '../images/black.png';
-    imageStatus = false;
-    ult = false;
-  }
-  else if (imageStatus === false && ult === true){
-    document.getElementById('logo').src = '../images/black.png';
-    ult = false;
-  }
-  else if ( imageStatus === false && ult === false ){
+  else{
+    document.getElementsByClassName('switch')[1].style.visibility = 'visible';
+    document.getElementsByClassName('DL')[1].style.visibility = 'visible';
     document.getElementById('logo').src = '../images/white.png';
-    imageStatus = true;
-  }
-  element.classList.toggle('dark-mode');
-  element2.classList.toggle('dark-mode');
-  element3.classList.toggle('dark-mode');
-  if (bool === true) {
-    for (let i = 1 ; i < imagesCount.length ; i++){
-      document.getElementById(i).style.filter = 'drop-shadow(8px 8px 10px gray)';
-    }
-    bool = false;
-  }
-  else {
-    bool = true;
+    // element.classList.toggle('dark-mode');
+    // element2.classList.toggle('dark-mode');
+    // element3.classList.toggle('dark-mode');
     for (let i = 1 ; i < imagesCount.length ; i++){
       document.getElementById(i).style.filter = 'none';
     }
+    el.href = 'css/style.css';
   }
 }
-let bool2 = true;
 function LightMode() {
-  let imagesCount1 = document.querySelectorAll('img');
-  if (document.getElementById('v1').checked){
-    document.getElementById('v1').checked = false;
-    let element4 = document.body;
-    let element5 = document.querySelector('header');
-    let element6 = document.querySelector('footer');
-    element4.classList.toggle('dark-mode');
-    element5.classList.toggle('dark-mode');
-    element6.classList.toggle('dark-mode');
-    document.querySelector('img').style.filter = 'none';
-    bool2 = true;
-    for (let i = 1 ; i < imagesCount1.length ; i++){
-      document.getElementById(i).style.filter = 'none';
-    }
-  }
-  let element = document.body;
-  let element2 = document.querySelector('header');
-  let element3 = document.querySelector('footer');
-  element.classList.toggle('Light-mode');
-  element2.classList.toggle('Light-mode');
-  element3.classList.toggle('Light-mode');
-  if (bool2 === true) {
-    for (let i = 1 ; i < imagesCount1.length ; i++){
+  let el = document.getElementById('normal');
+  // let element = document.body;
+  // let element2 = document.querySelector('header');
+  // let element3 = document.querySelector('footer');
+  let imagesCount = document.querySelectorAll('img');
+  if ( document.getElementById('v2').checked === true) {
+    document.getElementsByClassName('switch')[0].style.visibility = 'hidden';
+    document.getElementsByClassName('DL')[0].style.visibility = 'hidden';
+    document.getElementById('logo').src = '../images/white.png';
+    // element.classList.toggle('Light-mode');
+    // element2.classList.toggle('Light-mode');
+    // element3.classList.toggle('Light-mode');
+    for (let i = 1 ; i < imagesCount.length ; i++){
       document.getElementById(i).style.filter = 'contrast(200%)';
     }
-    bool2 = false;
+    el.href = 'css/white.css';
   }
-  else {
-    bool2 = true;
-    for (let i = 1 ; i < imagesCount1.length ; i++){
+  else{
+    document.getElementsByClassName('switch')[0].style.visibility = 'visible';
+    document.getElementsByClassName('DL')[0].style.visibility = 'visible';
+    document.getElementById('logo').src = '../images/white.png';
+    // element.classList.toggle('Light-mode');
+    // element2.classList.toggle('Light-mode');
+    // element3.classList.toggle('Light-mode');
+    for (let i = 1 ; i < imagesCount.length ; i++){
       document.getElementById(i).style.filter = 'none';
     }
+    el.href = 'css/style.css';
   }
-  document.getElementById('logo').src = '../images/white.png';
 }
 /*end of color contrast*/

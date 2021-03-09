@@ -8,7 +8,7 @@ header {
   grid-template-columns: 1fr 1fr ;
   align-items: center;
   padding: 0 20px;
-  background-color: #674697;
+  background-color: black;
   position: fixed;
   width: 100%;
   z-index: 9999;
@@ -29,7 +29,7 @@ nav {
 nav a {
   padding-right: 15px;
   text-decoration: none;
-  color: aliceblue;
+  color: white;
 }
 .sizeAndcolor{
   float: right;
@@ -43,8 +43,8 @@ header div {
 }
 body {
   font-family: 'Balsamiq Sans', cursive;
-  background: linear-gradient(to right top,  #664697c7,  #beaadf, #664697c7); /* #beaadf; */
-  color: aliceblue;
+  background: black;
+  color: white;
 }
 .container {
   display: grid;
@@ -85,6 +85,7 @@ main {
   width: 0;
   height: 0;
 } 
+
 h1 {
   font-size: 140%;
   font-family: 'Pridi', serif;
@@ -237,7 +238,7 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #435560;
+  background-color: black;
   font-size: 15px;
   font-family: 'Comic Neue', cursive; 
   height: 90px;
