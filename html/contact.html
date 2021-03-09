@@ -5,60 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GitHelp</title>
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/contactUs.css" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link id="normal" rel="stylesheet" href="../css/contactUs.css">
   </head>
   <body>
     <section class="container">
       <header>
-        <img
-          id="logo"
-          style="width: 120px; margin-left: 40px; margin-top: -5px"
-          src="../images/white.png"
-          alt=""
-        />
+        <div class="logoImg">
+          <img id="logo" class='logo' src="../images/black.png" alt="Logo for this website called gitHelp">
+        </div>
         <nav id="return">
           <a class="q" href="../index.html">Home</a>
           <a class="q" href="GitHelp.html">GitHelp</a>
           <a class="q" href="GiveHelp.html">Volunteer!</a>
           <a class="q" href="about.html">About Us</a>
-          <a class="q" href="contact.html">Contact </a>
-        </nav>
-      </header>
-      <main>
-        <!-------second nav--->
-        <div class="secondNav">
-          <div class="plus">
-            <input
-              type="button"
-              value="-"
-              onclick="decreaseFontSizeBy1px()"
-              class="sizingButton"
-            />
-            <p id="a">Font Size</p>
-            <input
-              type="button"
-              value="+"
-              onclick="increaseFontSizeBy1px()"
-              class="sizingButton"
-            />
-          </div>
-          <div>
-            <span>Dark Mode</span>
-            <label class="switch">
-              <input type="checkbox" onclick="DarkMode()" id="v1" />
-              <span class="slider round"></span>
-            </label>
-          </div>
-          <div>
-            <span>Light Mode</span>
-            <label class="switch">
-              <input type="checkbox" onclick="LightMode()" id="v2" />
-              <span class="slider round"></span>
-            </label>
-          </div>
+          <a class="q" href="contact.html">Contact Us</a>
+      </nav>
+        <div class="sizeAndcolor">
+            <div>
+                <span class="DL">Darker</span>
+                <label class="switch">
+                    <input type="checkbox" onclick="DarkMode()" id="v1">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div>
+                <span class="DL">Brighter</span>
+                <label class="switch">
+                    <input type="checkbox" onclick="LightMode()" id="v2">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="plus">
+                <label id="a">Font Size</label>
+                <input type="button" value="-" onclick="decreaseFontSizeBy1px()" class="sizingButton">
+                <input type="button" value="+" onclick="increaseFontSizeBy1px()" class="sizingButton">
+            </div>
         </div>
-        <p class="org1">
+    </header>
+      <main>
+        <p class="org">
           The Supreme Council for the Rights of Persons with Disabilities
         </p>
         <article>
@@ -83,7 +70,7 @@
             <span class="loc1">Location</span> : <br />
             Shmeisani-Building No.26
           </p>
-          <section class="info1">
+          <section class="info">
             Phone: +962 6 5538610
             <br />
             Fax: +962 6 5538243
@@ -91,8 +78,8 @@
         </div>
         <br />
         <br />
-        <p class="org1">Blind Academy</p>
-        <article id="artical2">
+        <p class="org">Blind Academy</p>
+        <article>
           Blind Academy - Abdullah Ibn Umm Maktoum School The Academy of the
           Blind was established in 2011 as a royal initiative, and it is the
           only academy in Jordan that deals with students with visual impairment
@@ -118,7 +105,7 @@
           </p>
         </div>
         <!--                             -->
-        <p class="org1">
+        <p class="org">
           Saudi Center for Rehabilitation and Training of Blind Women in Jordan
         </p>
         <article>
@@ -141,13 +128,13 @@
             Amman Jordan <br />
           </p>
           <p>
-            <span class="tel3">TEL : (06) 581 7904</span>
+            <span class="tel">TEL : (06) 581 7904</span>
           </p>
         </div>
         <br />
         <br />
         <br />
-        <p class="org1">
+        <p class="org">
           Diaa Charitable Association for the upbringing and education of
           visually impaired children
         </p>
@@ -168,7 +155,7 @@
             Address: Umm Nawara-near Queen Rania Park
           </p>
           <br />
-          <p class="tel3">
+          <p class="tel">
             Telephone number: 06 5821762 <br />
             Fax: 5821762 06
           </p>

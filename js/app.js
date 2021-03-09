@@ -87,19 +87,32 @@ function DarkMode() {
     for (let i = 1 ; i < imagesCount.length ; i++){
       document.getElementById(i).style.filter = 'grayscale(100%)';
     }
-    el.href = 'css/black.css';
+    // el.href = 'css/black.css';
+    if (el.href === 'css/style.css'){
+      el.href = 'css/black.css';
+    }
+    else{
+      el.href = '../css/black.css';
+    }
+
   }
   else{
     document.getElementsByClassName('switch')[1].style.visibility = 'visible';
     document.getElementsByClassName('DL')[1].style.visibility = 'visible';
-    document.getElementById('logo').src = '../images/white.png';
+    document.getElementById('logo').src = '../images/black.png';
     // element.classList.toggle('dark-mode');
     // element2.classList.toggle('dark-mode');
     // element3.classList.toggle('dark-mode');
     for (let i = 1 ; i < imagesCount.length ; i++){
       document.getElementById(i).style.filter = 'none';
     }
-    el.href = 'css/style.css';
+    // el.href = 'css/style.css';
+    if (el.href === 'css/black.css'){
+      el.href = 'css/style.css';
+    }
+    else{
+      el.href = '../css/style.css';
+    }
   }
 }
 function LightMode() {
@@ -118,19 +131,33 @@ function LightMode() {
     for (let i = 1 ; i < imagesCount.length ; i++){
       document.getElementById(i).style.filter = 'contrast(200%)';
     }
-    el.href = 'css/white.css';
+    // el.href = 'css/white.css';
+    if (el.href === 'css/style.css'){
+      el.href = 'css/white.css';
+    }
+    else{
+      el.href = '../css/white.css';
+
+    }
   }
   else{
     document.getElementsByClassName('switch')[0].style.visibility = 'visible';
     document.getElementsByClassName('DL')[0].style.visibility = 'visible';
-    document.getElementById('logo').src = '../images/white.png';
+    document.getElementById('logo').src = '../images/black.png';
     // element.classList.toggle('Light-mode');
     // element2.classList.toggle('Light-mode');
     // element3.classList.toggle('Light-mode');
     for (let i = 1 ; i < imagesCount.length ; i++){
       document.getElementById(i).style.filter = 'none';
     }
-    el.href = 'css/style.css';
+    // el.href = 'css/style.css';
+    if (el.href === 'css/white.css'){
+      el.href = 'css/style.css';
+    }
+    else{
+      el.href = '../css/style.css';
+
+    }
   }
 }
 /*end of color contrast*/
