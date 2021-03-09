@@ -14,11 +14,11 @@ header {
   z-index: 9999;
   height: 70px;
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
 }
 .logoImg{
   float: left;
   margin-right: 50px;
+  background: url('images/white.png');
 }
 .logo {
   width:80px;

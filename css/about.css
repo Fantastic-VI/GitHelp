@@ -26,10 +26,10 @@
   /* -webkit-backface-visibility: hidden; */
   backface-visibility: hidden;
 }
-/* .flip-card-front {
+.flip-card-front {
     background-color: #bbb;
     color: black;
-  } */
+  }
 .flip-card-back {
   background-color: lightblue;
   color: black;
