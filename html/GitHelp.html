@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/GitHelp.css">
 </head>
-
 <body>
     <section class="container">
         <header>
@@ -21,7 +19,6 @@
                 <a class="q" href="about.html">About Us</a>
                 <a class="q" href="contact.html">Contact Us</a>
             </nav>
-
         </header>
         <main>
             <!-------second nav--->
@@ -29,16 +26,13 @@
                 <div class="plus">
                     <input type="button" value="-" onclick="decreaseFontSizeBy1px()" class="sizingButton">
                     <p id="a">Font Size</p>
-
                     <input type="button" value="+" onclick="increaseFontSizeBy1px()" class="sizingButton">
                 </div>
                 <div>
                     <span>Dark Mode</span>
                     <label class="switch">
-
                         <input type="checkbox" onclick="DarkMode()" id="v1">
                         <span class="slider round"></span>
-
                     </label>
                 </div>
                 <div>
@@ -49,10 +43,9 @@
                     </label>
                 </div>
             </div>
-            <h1>Enter your information</h1> <br>
+            <h1>Enter Your Information About Required Service</h1> <br>
             <form id="form">
                 <fieldset>
-                    <legend>Information </legend>
                     <label>
                         <span>Select the type of service</span>
                         <select id="items"></select>
@@ -66,7 +59,7 @@
                     <br>
                     <br>
                     <label>
-                        <span>Phone number<span style="color: red; font-size: 80%;">*</span>
+                        <span id='text1'>Phone number<span style="color: red; font-size: 80%;">*</span>
                         </span>
                         <input class="phone" type="tel" id="phone" required pattern="[0-9]{10}"
                             placeholder="Enter you phone number, it should consist of 10 Digits">
@@ -85,12 +78,12 @@
                         <input type="text" id="location1" required placeholder="Please Enter the city"
                             style="width: 30%;">
                         <input type="text" id="location2" required placeholder="Street" style="width: 30%;">
-                        <input type="text" id="location3" required placeholder="Building" style="width: 30%;">
+                        <input type="number" id="location3" required placeholder="Building" style="width: 30%;">
                         <br>
                     </label>
                     <label>
-                        <span>Details<span style="color: red; font-size: 80%;">*</span></span>
-                        <input type="text" id="details" required placeholder="Do you have any other details?">
+                        <span>Details</span>
+                        <input type="text" id="details">
                     </label>
                     <br>
                     <br>
@@ -101,9 +94,7 @@
 <div id='animations' style="visibility: hidden;">
     <h1 >Your Request Has Been Successfully Added !</h1>
 </div>
-
         </main>
-
         <footer>
             <p>All Rights Reserved &copy; 2021 <br> Fantastic VI </p>
         </footer>
