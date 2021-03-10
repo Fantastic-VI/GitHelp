@@ -1,20 +1,12 @@
-
-
-ol li {
-    margin: 15px;
-    text-indent: none;
-    list-style:upper-alpha;
-
-}
-    .org
+ .org
     {
         margin-top: 55px;
         text-align: center;
-       font-size: 300%;
+       font-size: 150%;
        font-weight: bold;
     }
   
-  .link:hover{
+    a:hover{
      color: blue;
      background-color: rgb(203, 242, 243);
     }
@@ -25,15 +17,12 @@ ol li {
         font-weight: bold;
         margin-bottom: 20px;
     }
-    .link{
+
+    a{
         text-decoration: none;
-        font-style: italic;
-        font-weight: bold;
+
     }
-.info
-{
-    font-weight: bold;
-}
+   
     article
     {
         text-indent: 20px;
@@ -41,14 +30,3 @@ ol li {
         text-align: justify;
         display: flex;
     }
-
- .tel
- {
-     font-weight: bold;
- }
-
-
-.one {
-  column-count: 2;
-}
-

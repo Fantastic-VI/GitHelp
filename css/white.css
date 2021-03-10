@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
 * {
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
 header {
   display: grid;
   grid-template-columns: 1fr 1fr ;
@@ -20,7 +21,6 @@ header {
   float: left;
   margin-right: 50px;
 }
-
 .logo {
   width:80px;
 }
@@ -53,6 +53,7 @@ body {
 }
 header {
   display: inline;
+  background: white;
   color: black;
   font-family: 'Balsamiq Sans', cursive;
 }
@@ -88,7 +89,6 @@ main {
   width: 0;
   height: 0;
 } 
-
 h1 {
   font-size: 140%;
   text-align: center;
@@ -185,6 +185,8 @@ input:checked + .slider:before {
   padding-top: 3px;
   padding-bottom: 20px;
 }
+
+
 .dots-container .dot {
   cursor: pointer;
   margin: 5px;
@@ -226,7 +228,7 @@ input:checked + .slider:before {
 li {
   text-align: left;
   list-style: square;
-  font-size: 135%;
+  font-size: 100%;
 }
 /* ifream start*/
 .successStory{
@@ -239,7 +241,7 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color:  white;
+  background-color: white;
   color: black;
   font-size: 15px;
   height: 80px;
@@ -247,3 +249,4 @@ footer {
   font-family: 'Balsamiq Sans', cursive;
   border-top: gray 2px solid;
 }
+

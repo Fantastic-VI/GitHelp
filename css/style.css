@@ -227,7 +227,7 @@ input:checked + .slider:before {
 li {
   text-align: left;
   list-style: square;
-  font-size: 135%;
+  font-size: 100%;
 }
 /* ifream start*/
 .successStory{
