@@ -81,7 +81,7 @@ margin-top: 40px;
 margin-bottom: 40px;
 width: 900px;
 }
-#volData input[type=text], input[type=number]{
+#volData input[type=text], input[type=tel]{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;

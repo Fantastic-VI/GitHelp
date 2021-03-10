@@ -47,7 +47,7 @@
           </header>
         <main>
             <div id="div1">
-        <h1>Pick the service you want to provide</h1>
+        <h1 style="text-align: left;">Pick the service you want to provide</h1>
         <form id="form2">
             <fieldset>
                 <!-- <legend>CCCC</legend> -->
@@ -82,17 +82,17 @@
             <form id="enterData">
                 <fieldset class="secondFieldSet">
                     <label>
-                        <span>Name <span style="color:#674697; font-size: 60%;"> *</span></span>
-                        <input type="text" id="name2">
+                        <span>Name<span style="color:red; font-size: 60%;"> *</span></span>
+                        <input type="text" id="name2" required placeholder="Please Enter your Name">
                     </label>
                     <label>
-                        <span>Phone number <span style="color: #674697; font-size: 60%;"> *</span></span>
-                        <input type="number" id="phone2"  required 
+                        <span>Phone number <span style="color:red; font-size: 60%;"> *</span></span> <br>
+                        <input type="tel" id="phone2"  required 
                         pattern="[0-9]{10}" placeholder="Enter you phone number, it should consist of 10 Digits">
                     </label>
                     <br>
                     <br>
-                    <p style="color: #674697;" >Required *</p>
+                    <p style="color: red ;font-size:75% "> Required<sup style="color: red; font-size: 100%;">*</sup>  </p>
                     <br>
                     <br>
                     <input class="input1" type="submit" value="submit">
