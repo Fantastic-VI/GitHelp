@@ -1,165 +1,183 @@
-main{
-  word-spacing: 1px;
-}
 #table {
-    border-collapse: collapse;
-    margin: auto;
-    width: 100%;
-  }
-  #table thead tr th {
-    color: black;
-    border-bottom: 3px solid #062f4f;
-    font-weight: bold;
-    padding: .5em 1em;
-    height: 60px;
-    word-spacing: 0px;
-  }
-  #table tr td {
-    border-bottom: 1px solid #062f4f;
-    border-collapse: none;
-    color: black;
-    padding: .5em 1em;
-    text-align: center;
-    width: auto;
-    height: 50px;
-  }
-  #table tr td img{
-    height: 40px;
-    width: 40px;
-  }
-  #table tr td:last-child {
-    color: red;
-    cursor: pointer;
-  }
-  tr {
-    align-items: center;
-  }
- h1{
-   font-size: larger;
-   font-weight: bold;
- }
- #span1{
-   margin-right: 20px;
- }
- #input1{
-   margin-left: 40px;
-   border: 0;
-   padding: 13px 30px;
-   background-color: green;
-   color: white;
-   border-radius: 7px;
- }
- #input1:hover {background-color: #3e8e41}
- #input1:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%;
 }
- #label1{
-   font-size: larger;
- }
- #items2{
-   padding: 10px ;
- }
- #div1{
-  margin-bottom: 30px;
-  padding-left: 20px;
-  line-height: 60px;
-  border-radius: 10px;
-  margin-top: 40px;
- }
-#volData input[type=text], input[type=tel]{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-#enterData fieldset{
-  border: 2px black groove;
+#table thead tr th {
+  border-bottom: 3px solid #674697;
   padding: 20px;
+  height: 60px;
+  width: auto;
+  font-size: 80%;
+}
+#table tr td {
+  border-bottom: 1px solid #674697;
+  border-collapse: none;
+  padding: 20px;
+  text-align: center;
+  width: auto;
+  height: 50px;
+  font-size: 80%;
+
+}
+
+#table tr td:last-child {
+  color: red;
+  cursor: pointer;
+}
+tr {
+  align-items: center;
+}
+
+#span1{
+ margin-right: 20px;
+}
+.input1{
+ /* margin-left: 40px;
+ border: 0;
+ padding: 13px 30px;
+ background-color: green;
+ color: white;
+ border-radius: 2px; */
+ width: 20%;
+ background-color: #674697;
+ color: white;
+ padding: 14px 20px;
+ margin: 8px 0;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+.input1:hover {
+  background-color: #74618f;
+
+}
+
+
+
+#label1{
+ font-size: larger;
+}
+#items2{
+ padding: 10px ;
+}
+#div1{
+/* border: 2px gray groove;
+margin-bottom: 30px;
+padding-left: 20px;
+line-height: 60px;
+border-radius: 10px;
+margin-top: 40px; */
+border-top: thin;
+border-right: thin;
+border-left: thin;
+border-bottom: thin;
+border-color: #674697;
+border-radius: 2%;
+border-style:dotted;
+padding: 40px;
+margin-top: 40px;
+margin-bottom: 40px;
+width: 900px;
+}
+#volData input[type=text], input[type=number]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;}
+/* }
+#enterData fieldset{
+border: 2px black groove;
+padding: 20px;
 }
 #enterData fieldset legend{
-  margin: 0 20px;
-}
-#enterData input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: larger;
-}
-main form fieldset{
-  border: 2px gray groove;
-  align-items: center;
-  padding-left: 20px;
-}
-.container{
-  display: grid;
-  gap: 0px;
-}
+margin: 0 20px;
+} */
+/* #enterData input[type=submit] {
+width: 100%;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: larger;
+} */
 #alert h1 {
-  animation: text-shadow 1.5s ease-in-out infinite;
-  font-size: 5em;
-  font-weight: 800;
-  line-height: 1;
-  color: rgb(198, 43, 226);
-  text-align: center;
+animation: text-shadow 1.5s ease-in-out infinite;
+font-size: 5em;
+font-weight: 800;
+line-height: 1;
+color: rgb(198, 43, 226);
+text-align: center;
 }
 #alert h1:hover {
-  animation-play-state: paused;
+animation-play-state: paused;
 }
 @keyframes text-shadow {
-  0% {  
-    transform: translateY(0);
-    text-shadow: 
-        0 0 0 #0c2ffb, 
-        0 0 0 #2cfcfd, 
-        0 0 0 #fb203b, 
-        0 0 0 #fefc4b;
+0% {  
+  transform: translateY(0);
+  text-shadow: 
+      0 0 0 #0c2ffb, 
+      0 0 0 #2cfcfd, 
+      0 0 0 #fb203b, 
+      0 0 0 #fefc4b;
 }
 20% {  
-    transform: translateY(0.25em);
-    text-shadow: 
-        0 0.125em 0 #0c2ffb, 
-        0 0.25em 0 #2cfcfd, 
-        0 -0.125em 0 #fb203b, 
-        0 -0.25em 0 #fefc4b;
+  transform: translateY(0.25em);
+  text-shadow: 
+      0 0.125em 0 #0c2ffb, 
+      0 0.25em 0 #2cfcfd, 
+      0 -0.125em 0 #fb203b, 
+      0 -0.25em 0 #fefc4b;
 }
 40% {  
-    transform: translateY(0.5em);
-    text-shadow: 
-        0 -0.0625em 0 #0c2ffb, 
-        0 -0.125em 0 #2cfcfd, 
-        0 0.0625em 0 #fb203b, 
-        0 0.125em 0 #fefc4b;
+  transform: translateY(0.5em);
+  text-shadow: 
+      0 -0.0625em 0 #0c2ffb, 
+      0 -0.125em 0 #2cfcfd, 
+      0 0.0625em 0 #fb203b, 
+      0 0.125em 0 #fefc4b;
 }
 60% {
-    transform: translateY(0.25em);
-    text-shadow: 
-        0 0.03125em 0 #0c2ffb, 
-        0 0.0625em 0 #2cfcfd, 
-        0 -0.03125em 0 #fb203b, 
-        0 -0.0625em 0 #fefc4b;
+  transform: translateY(0.25em);
+  text-shadow: 
+      0 0.03125em 0 #0c2ffb, 
+      0 0.0625em 0 #2cfcfd, 
+      0 -0.03125em 0 #fb203b, 
+      0 -0.0625em 0 #fefc4b;
 }
 80% {  
-    transform: translateY(0);
-    text-shadow: 
-        0 0 0 #0c2ffb, 
-        0 0 0 #2cfcfd, 
-        0 0 0 #fb203b, 
-        0 0 0 #fefc4b;
+  transform: translateY(0);
+  text-shadow: 
+      0 0 0 #0c2ffb, 
+      0 0 0 #2cfcfd, 
+      0 0 0 #fb203b, 
+      0 0 0 #fefc4b;
 }
 }
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
+* {
+  animation: none !important;
+  transition: none !important;
+}
+}
+
+.secondFieldSet {
+  border-top: thin;
+  border-right: thin;
+  border-left: thin;
+  border-bottom: thin;
+  border-color: #674697;
+  border-radius: 2%;
+  border-style:dotted;
+  padding: 20px;
+  width: 900px;
+  margin-bottom: 100px;
+
 }

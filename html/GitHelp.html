@@ -21,8 +21,8 @@
         <a class="q" href="../index.html">Home</a>
         <a class="q" href="GitHelp.html">GitHelp</a>
         <a class="q" href="GiveHelp.html">Volunteer!</a>
-        <a class="q" href="about.html">About Us</a>
-        <a class="q" href="contact.html">Contact Us</a>
+        <a class="q" href="about.html">Our Team</a>
+        <a class="q" href="contact.html">Institutions</a>
       </nav>
       <div class="sizeAndcolor">
         <div>
@@ -49,55 +49,57 @@
     </header>
     <main>
 
-      <p style="padding-top: 50px;">Enter the type of service you need and contact information to be contacted as soon as possible ♥ </p> <br>
+      <p style="padding-top: 50px;">Enter The Type of Service You Need And Contact Information To Be Contacted As Soon As Possible ♥ .. </p> <br>
       <form id="form">
         <fieldset>
           <label>
             <span>Select the type of service</span>
             <br>
-            <select id="items"></select>
+            <select style="color: #767b83;" id="items"></select>
           </label>
           <br>
           <br>
           <label>
-            <span>Name<span style="color: red; font-size: 80%;"> *</span></span>
+            <span>Name<span style="color: #674697; font-size: 80%;"> *</span></span>
             <br>
             <input type="text" id="name" required placeholder="Please enter your name">
           </label>
           <br>
           <br>
           <label>
-            <span id='text1'>Phone number<span style="color: red; font-size: 80%;"> *</span>
+            <span id='text1'>Phone number<span style="color: #674697; font-size: 80%;"> *</span>
               <br>
             </span>
-            <input class="phone" type="tel" id="phone" required pattern="[0-9]{10}"
+            <input style="padding-left: 20px;"  class="phone" type="tel" id="phone" required pattern="[0-9]{10}"
               placeholder="Enter you phone number, it should consist of 10 Digits">
           </label>
           <br>
           <br>
           <label>
-            <span class="display">Date and Time of Service<span style="color: red; font-size: 80%;"> *</span></span>
+            <span class="display">Date and Time of Service<span style="color: #674697; font-size: 80%;"> *</span></span>
             <br>
-            <input class="time" type="datetime-local" id="time" required>
+            <input style="padding-left: 20px; color: #767b83;"  class="time" type="datetime-local" id="time" required>
           </label>
           <br>
           <br>
           <label>
-            <span>Location of service<span style="color: red; font-size: 80%;">*</span></span> <br>
+            <span>Location of service<span style="color: #674697; font-size: 80%;"> *</span></span> <br>
             <input type="text" class="loc" id="location1" required placeholder="Please Enter the city">
             <input type="text" class="loc" id="location2" required placeholder="Street">
-            <input style="padding-left: 20px;" type="number" class="loc" id="location3" required placeholder="Building">
+            <input style="padding-left: 20px; margin-top: 9px ;" type="text" class="loc" id="location3" required placeholder="Building">
 
             <br>
           </label>
           <label>
-            <span>Details</span>
+            <br>
+            <span >Details</span>
             <br>
             <input type="text" id="details">
           </label>
           <br>
           <br>
-          <p style="color: red; font-size: 80%;font-weight: bolder;"><sup></sup></p>
+          <p style="color: #674697;"> Required * </p>
+          <p style="color: #674697; font-size: 80%;font-weight: bolder;"><sup></sup></p>
           <br>
           <input class="HoverButton" type="submit" value="Submit">
         </fieldset>
