@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+* {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  align-items: center;
+  padding: 0 20px;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  height: 70px;
+  font-size: 15px;
+}
+.logoImg{
+  float: left;
+  margin-right: 50px;
+}
+
+.logo {
+  width:80px;
+}
+nav {
+  margin-top: 30px;
+}
+nav a {
+  padding-right: 15px;
+  text-decoration: none;
+  color: black;
+}
+.sizeAndcolor{
+  float: right;
+  margin-top: -20.9px;
+}
+.sizeAndcolor div {
+  padding-left: 15px;
+}
+header div {
+  display: inline;
+}
+body {
+  font-family: 'Balsamiq Sans', cursive;
+  background: white;
+  color: black;
+}
+.container {
+  display: grid;
+  grid-template-rows: 100px minmax(1fr,1fr) 100px;
+}
+header {
+  display: inline;
+}
+main {
+  width: 70%;
+  margin: auto;
+  padding-top: 90px;
+  word-spacing: 10px;
+  line-height: 1.6;
+}
+.secondNav {
+  width:1fr; 
+  border-bottom: grey 2px solid;
+}
+.sizingButton {
+  padding: 0 3px;
+  background-color: #674697;
+  color: white;
+  border-color: white;
+  border-radius: 5%;
+  font-size: large;
+  width: 20px;
+}
+/* toggle buttons Begin*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+} 
+
+h1 {
+  font-size: 140%;
+  font-family: 'Pridi', serif;
+  font-family: 'RocknRoll One', sans-serif;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.Intro {
+  font-size: 110%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Pridi', serif;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  left: 4px;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  width: 20px;
+  height: 20px;
+}
+input:checked + .slider {
+  background-color: #674697;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #674697;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+ /* toggle buttons End*/
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+/* Rounded sliders */
+/* Slide Show Begin*/    
+.slide-container {
+  width: 960px;
+  height: 410px;
+}
+.slide-container img {
+  height: 400px;
+}
+.slide-container .prev,
+.slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  height: 100%;
+  padding: 23% 0;
+  font-weight: bold;
+  font-size: 500%;
+  transition: all .7s fade-in;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+  opacity: 0;
+}
+.slide-container .prev:hover,
+.slide-container .next:hover {
+  background-color: rgba(247, 247, 247, 0.3);
+  color: rgb(212, 212, 212);
+  opacity: 1;
+}
+.slide-container .prev {
+  left: 0px;
+  padding: auto 10px;
+}
+.slide-container .next {
+  right: 0px;
+  padding: auto 10px;
+}
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+  padding-bottom: 20px;
+}
+.dots-container .dot {
+  cursor: pointer;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  color: rgb(36, 36, 36);
+  border-radius: 50%;
+  background-color: #664697c2;
+}
+.dots-container .dot.active {
+  border: 2px solid #674697;
+  background-color:#4f2886;
+}
+.slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+}
+.slide-container .slide {
+  display: none;
+  width: 100%;
+}
+.slide-container .slide.fade {
+  animation: fade 0.3 cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  transform: scale(1);
+  opacity: 1;
+  animation-name: fadeInOutOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 6s;
+}
+.slide-container .slide img {
+  width: 100%;
+  border-radius: 2%;
+}
+li {
+  font-family: 'Pridi', serif;
+  text-align: left;
+  list-style: square;
+}
+/* ifream start*/
+.successStory{
+text-align:center;
+margin: 5% 0;
+}
+/* ifream end*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  font-size: 15px;
+  font-family: 'Comic Neue', cursive; 
+  height: 55px;
+  line-height: 1.6;
+}
