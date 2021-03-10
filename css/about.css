@@ -1,9 +1,9 @@
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   /* perspective: 1000px; */
-  border-radius: 100px;
+  border-radius: 10%;
 }
 .flip-card-inner {
   position: relative;
@@ -25,6 +25,7 @@
   height: 200px;
   /* -webkit-backface-visibility: hidden; */
   backface-visibility: hidden;
+  border-radius: 10%;
 }
 .flip-card-front {
     background-color: gray;
@@ -42,8 +43,8 @@
 }
 main section {
   display: grid;
-  grid-template-columns: 320px 320px 320px;
-  padding: 10px 0;
+  grid-template-columns: 1fr 1fr 1fr ;
+  padding: 20px 100px;
 }
 main img {
   border-radius: 10%;
@@ -51,7 +52,7 @@ main img {
 h2 {
   display: inline-block;
   width: 20%;
-  margin-left: 40%;
+  margin-left: 37%;
   font-size: 150%;
   margin-bottom: 10px;
   /* background-color: lightblue; */
@@ -65,6 +66,14 @@ h1 {
   font-weight: bold;
   font-size: 200%;
 }
-p {
-  word-spacing: normal;
+ section p {
+  font-size: small;
+}
+main {
+  width: 960px;
+  margin: auto;
+}
+section {
+  width: 100%;
+  margin: auto;
 }
