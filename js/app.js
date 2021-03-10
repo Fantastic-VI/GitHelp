@@ -71,9 +71,10 @@ function increaseFontSizeBy1px() {
 /*end of font sizing*/
 /*start of color contrast*/
 
-
+let indexes = false;
 function DarkMode() {
   let el = document.getElementById('normal');
+  let r = document.querySelector('body');
   // let element = document.body;
   // let element2 = document.querySelector('header');
   // let element3 = document.querySelector('footer');
@@ -89,13 +90,13 @@ function DarkMode() {
       document.getElementById(i).style.filter = 'grayscale(100%)';
     }
     // el.href = 'css/black.css';
-    if (el.href === 'css/style.css') {
+    if (r.id === 'be' ) {
       el.href = 'css/black.css';
+      indexes = true;
       console.log(1);
     }
     else {
       el.href = '../css/black.css';
-      console.log(2);
     }
 
   }
@@ -110,16 +111,19 @@ function DarkMode() {
       document.getElementById(i).style.filter = 'none';
     }
     // el.href = 'css/style.css';
-    if (el.href === 'css/black.css') {
+    if (indexes === true) {
       el.href = 'css/style.css';
+      indexes = false;
     }
     else {
       el.href = '../css/style.css';
     }
   }
 }
+let indexes2 = false;
 function LightMode() {
   let el = document.getElementById('normal');
+  let r = document.querySelector('body');
   // let element = document.body;
   // let element2 = document.querySelector('header');
   // let element3 = document.querySelector('footer');
@@ -135,8 +139,10 @@ function LightMode() {
       document.getElementById(i).style.filter = 'contrast(200%)';
     }
     // el.href = 'css/white.css';
-    if (el.href === 'css/style.css') {
+    if (r.id === 'be') {
       el.href = 'css/white.css';
+      indexes2 = true;
+      console.log(1);
     }
     else {
       el.href = '../css/white.css';
@@ -154,8 +160,9 @@ function LightMode() {
       document.getElementById(i).style.filter = 'none';
     }
     // el.href = 'css/style.css';
-    if (el.href === 'css/white.css') {
+    if (indexes2 === true) {
       el.href = 'css/style.css';
+      indexes2 = false;
     }
     else {
       el.href = '../css/style.css';
