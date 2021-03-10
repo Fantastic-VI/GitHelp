@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHelp</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link id="normal" rel="stylesheet" href="../css/style.css">
+</head>
+
+<body id = "99">
+    <section class="container">
+        <header>
+            <div class="logoImg">
+                <img id="logo" class='logo' src="./images/black.png" alt="Logo for this website called gitHelp">
+            </div>
+            <nav>
+                <a class="q" href="#">Home</a>
+                <a class="q" href="html/GitHelp.html">GitHelp</a>
+                <a class="q" href="html/GiveHelp.html">Volunteer!</a>
+                <a class="q" href="html/about.html">Our Team</a>
+                <a class="q" href="html/contact.html">Institutions</a>
+            </nav>
+            <div class="sizeAndcolor">
+                <div>
+                    <span class="DL">Darker</span>
+                    <label class="switch">
+                        <input type="checkbox" onclick="DarkMode()" id="v1">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div>
+                    <span class="DL">Brighter</span>
+                    <label class="switch">
+                        <input type="checkbox" onclick="LightMode()" id="v2">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="plus">
+                    <label id="a">Font Size</label>
+                    <input type="button" value="-" onclick="decreaseFontSizeBy1px()" class="sizingButton">
+                    <input type="button" value="+" onclick="increaseFontSizeBy1px()" class="sizingButton">
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Welcome to GitHelp</h1>
+            <p class="Intro">
+                The GitHelp Website it's completely free. This website is your gateway to the entire collection in one
+                place: Reading, Recording, Psychologic – there is so much to access, Join and enjoy. Welcome!</p>
+            <div class="slide-container">
+                <div class="slide fade">
+                    <img id="1" src='./images/img1.jpg' alt='Low Vision person using CCTV (closed circuit television) '>
+                </div>
+                <div class="slide fade">
+                    <img id="2" src='./images/img2.jpg'
+                        alt='A blind person is sensing to prominent letters to read them '>
+                </div>
+                <div class="slide fade">
+                    <img id="3" src='./images/img3.jpg'
+                        alt='Some educational games for children with visual impairment '>
+                </div>
+                <div class="slide fade">
+                    <img id="4" src='./images/img4.jpg' alt='Blind reads the name of the drug written in Braille '>
+                </div>
+                <div class="slide fade">
+                    <img id="5" src='./images/img5.jpg' alt='A woman accompanies a blind person crossing the road '>
+                </div>
+                <div class="slide fade">
+                    <img id="6" src='./images/img6.jpg' alt='The elevator floor numbers are numbered in Braille '>
+                </div>
+                <div class="slide fade">
+                    <img id="7" src='./images/img7.jpg'
+                        alt='Some educational games for children with visual impairment '>
+                </div>
+                <div class="slide fade">
+                    <img id="8" src='./images/img8.jpg'
+                        alt='Normal Person A blind person knows where the air conditioner controller is. '>
+                </div>
+                <a href="#" class="prev" title="Previous">&#10094</a>
+                <a href="#" class="next" title="Next">&#10095</a>
+            </div>
+            <div id="dotesContainer" class="dots-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            <!-- </div>
+            <h1>10 TIPS FOR COMMUNICATING WITH SOMEONE WITH SIGHT LOSS</h1>
+            <hr> -->
+            <!-- <section>
+                <div>
+                    <ul class="tenTips">
+                        <li>IS ID yourself when you're coming in and out and going down to a room, say hello and say
+                            goodbye and introduce your name.</li>
+                        <li>Ask about their level of sight you don't know how much support they need until you know how
+                            much they can see or can't see.</li>
+                        <li>In a group situation make sure it's clear how many people are in the group and who you are,
+                            and if you are leaving then make that clear as well.</li>
+                        <li>Description don't say "over here" or "over there", let them know. Tell them exactly where it
+                            is, be descriptive.</li>
+                        <li>Again is about support, don't just give support ask first some people want it, some people
+                            don't.</li>
+                        <li>Using everyday language so some people become very conscious of saying things like "see you
+                            later" or "did you watch that movie last night?". You can still use all that kind of
+                            everyday language to just be normal basically.</li>
+                        <li>A third person. When out in a group and you see a VI, don't go through somebody else to
+                            speak to them, speak to them directly. </li>
+                        <li>On the same sort of tilt use normal body language, so even if somebody can't see that you're
+                            gesturing your hands around like I do or making eye contact, then still do that because that
+                            will mean that the way you talk is more natural.</li>
+                        <li>Explain loud noises that may startle a person, such as building works or alarms.</li>
+                        <li>Relax yourself.</li>
+                    </ul>
+                </div>
+            </section> -->
+            <!-- <hr>
+            <div class="successStory">
+                <iframe width="753" height="400" src="https://www.youtube.com/embed/gAJXpShS6Oc" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div> -->
+        </main>
+        <footer>
+            <p>All Rights Reserved &copy; 2021 <br> Fantastic VI </p>
+        </footer>
+    </section>
+    <script src="../js/app.js"></script>
+    <script src="../js/slider.js"></script>
+</body>
+</html>
