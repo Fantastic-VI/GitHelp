@@ -5,10 +5,7 @@
   border-radius: 5px;
 }
 
-#form {
-  color: #674697;
 
-}
 
 .loc
  {
@@ -28,17 +25,20 @@ input[type=text], select {
     border-radius: 5px;
     box-sizing: border-box;
   }
+
   fieldset
   {
-    border-top: solid;
-    border-right: solid;
-    border-left: solid;
+    border-top: thin;
+    border-right: thin;
+    border-left: thin;
     border-bottom: thin;
     border-color: #674697;
-    border-style: solid;
+    border-radius: 2%;
+    border-style:dotted;
     padding: 20px;
-    background-color: white;
+    width: 900px;
   }
+
   span
   {
     font-size: larger;

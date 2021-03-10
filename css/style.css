@@ -143,10 +143,10 @@ input:checked + .slider:before {
 /* Slide Show Begin*/    
 .slide-container {
   width: 960px;
-  height: 564px;
+  height: 410px;
 }
 .slide-container img {
-  height: 547px;
+  height: 400px;
 }
 .slide-container .prev,
 .slide-container .next {
@@ -181,8 +181,11 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding-top: 3px;
+  padding-bottom: 20px;
 }
+
+
 .dots-container .dot {
   cursor: pointer;
   margin: 5px;
@@ -237,9 +240,10 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #435560;
+  background-color: black;
   font-size: 15px;
   font-family: 'Comic Neue', cursive; 
-  height: 90px;
+  height: 55px;
   line-height: 1.6;
 }
+
