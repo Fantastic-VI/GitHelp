@@ -94,16 +94,17 @@ function DarkMode() {
       el.href = 'css/black.css';
       indexes = true;
       console.log(1);
+      document.getElementById('logo').src = './images/black.png';
     }
     else {
       el.href = '../css/black.css';
+      document.getElementById('logo').src = '../images/black.png';
     }
 
   }
   else {
     document.getElementsByClassName('switch')[1].style.visibility = 'visible';
     document.getElementsByClassName('DL')[1].style.visibility = 'visible';
-    document.getElementById('logo').src = '../images/black.png';
     // element.classList.toggle('dark-mode');
     // element2.classList.toggle('dark-mode');
     // element3.classList.toggle('dark-mode');
@@ -114,9 +115,11 @@ function DarkMode() {
     if (indexes === true) {
       el.href = 'css/style.css';
       indexes = false;
+      document.getElementById('logo').src = './images/black.png';
     }
     else {
       el.href = '../css/style.css';
+      document.getElementById('logo').src = '../images/black.png';
     }
   }
 }
@@ -131,7 +134,6 @@ function LightMode() {
   if (document.getElementById('v2').checked === true) {
     document.getElementsByClassName('switch')[0].style.visibility = 'hidden';
     document.getElementsByClassName('DL')[0].style.visibility = 'hidden';
-    document.getElementById('logo').src = '../images/white.png';
     // element.classList.toggle('Light-mode');
     // element2.classList.toggle('Light-mode');
     // element3.classList.toggle('Light-mode');
@@ -142,17 +144,17 @@ function LightMode() {
     if (r.id === 'be') {
       el.href = 'css/white.css';
       indexes2 = true;
+      document.getElementById('logo').src = './images/white.png';
       console.log(1);
     }
     else {
       el.href = '../css/white.css';
-
+      document.getElementById('logo').src = '../images/white.png';
     }
   }
   else {
     document.getElementsByClassName('switch')[0].style.visibility = 'visible';
     document.getElementsByClassName('DL')[0].style.visibility = 'visible';
-    document.getElementById('logo').src = '../images/black.png';
     // element.classList.toggle('Light-mode');
     // element2.classList.toggle('Light-mode');
     // element3.classList.toggle('Light-mode');
@@ -163,10 +165,11 @@ function LightMode() {
     if (indexes2 === true) {
       el.href = 'css/style.css';
       indexes2 = false;
+      document.getElementById('logo').src = './images/black.png';
     }
     else {
       el.href = '../css/style.css';
-
+      document.getElementById('logo').src = '../images/black.png';
     }
   }
 }
