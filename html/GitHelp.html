@@ -60,14 +60,14 @@
           <br>
           <br>
           <label>
-            <span>Name<span style="color: #674697; font-size: 80%;"> *</span></span>
+            <span>Name<span style="color: red; font-size: 80%;"> *</span></span>
             <br>
             <input type="text" id="name" required placeholder="Please enter your name">
           </label>
           <br>
           <br>
           <label>
-            <span id='text1'>Phone number<span style="color: #674697; font-size: 80%;"> *</span>
+            <span id='text1'>Phone number<span style="color: red; font-size: 80%;"> *</span>
               <br>
             </span>
             <input style="padding-left: 20px;"  class="phone" type="tel" id="phone" required pattern="[0-9]{10}"
@@ -76,17 +76,17 @@
           <br>
           <br>
           <label>
-            <span class="display">Date and Time of Service<span style="color: #674697; font-size: 80%;"> *</span></span>
+            <span class="display">Date and Time of Service<span style="color: red; font-size: 80%;"> *</span></span>
             <br>
             <input style="padding-left: 20px; color: #767b83;"  class="time" type="datetime-local" id="time" required>
           </label>
           <br>
           <br>
           <label>
-            <span>Location of service<span style="color: #674697; font-size: 80%;"> *</span></span> <br>
+            <span>Location of service<span style="color: red; font-size: 80%;"> *</span></span> <br>
             <input type="text" class="loc" id="location1" required placeholder="Please Enter the city">
             <input type="text" class="loc" id="location2" required placeholder="Street">
-            <input style="padding-left: 20px; margin-top: 9px ;" type="text" class="loc" id="location3" required placeholder="Building">
+            <input style="padding-left: 20px; margin-top: 9px ;" type="number" class="loc" id="location3" required placeholder="Building">
 
             <br>
           </label>
@@ -98,8 +98,7 @@
           </label>
           <br>
           <br>
-          <p style="color: #674697;"> Required * </p>
-          <p style="color: #674697; font-size: 80%;font-weight: bolder;"><sup></sup></p>
+          <p style="color: red ;font-size:75% "> Required<sup style="color: red; font-size: 100%;">*</sup>  </p>
           <br>
           <input class="HoverButton" type="submit" value="Submit">
         </fieldset>
