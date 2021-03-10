@@ -2,7 +2,7 @@
 * {
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
 header {
   display: grid;
   grid-template-columns: 1fr 1fr ;
@@ -14,6 +14,7 @@ header {
   z-index: 9999;
   height: 70px;
   font-size: 15px;
+  border-bottom: gray 2px solid;
 }
 .logoImg{
   float: left;
@@ -42,7 +43,7 @@ header div {
   display: inline;
 }
 body {
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'RocknRoll One', sans-serif;
   background: white;
   color: black;
 }
@@ -52,12 +53,14 @@ body {
 }
 header {
   display: inline;
+  color: black;
+  font-family: 'Balsamiq Sans', cursive;
 }
 main {
   width: 70%;
   margin: auto;
   padding-top: 90px;
-  word-spacing: 10px;
+  word-spacing: 3px;
   line-height: 1.6;
 }
 .secondNav {
@@ -88,8 +91,6 @@ main {
 
 h1 {
   font-size: 140%;
-  font-family: 'Pridi', serif;
-  font-family: 'RocknRoll One', sans-serif;
   text-align: center;
   margin-bottom: 12px;
 }
@@ -97,7 +98,6 @@ h1 {
   font-size: 110%;
   text-align: center;
   margin-bottom: 20px;
-  font-family: 'Pridi', serif;
 }
 .slider {
   position: absolute;
@@ -144,10 +144,10 @@ input:checked + .slider:before {
 /* Slide Show Begin*/    
 .slide-container {
   width: 960px;
-  height: 410px;
+  height: 564px;
 }
 .slide-container img {
-  height: 400px;
+  height: 547px;
 }
 .slide-container .prev,
 .slide-container .next {
@@ -224,9 +224,9 @@ input:checked + .slider:before {
   border-radius: 2%;
 }
 li {
-  font-family: 'Pridi', serif;
   text-align: left;
   list-style: square;
+  font-size: 135%;
 }
 /* ifream start*/
 .successStory{
@@ -239,9 +239,11 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: black;
+  background-color:  white;
+  color: black;
   font-size: 15px;
-  font-family: 'Comic Neue', cursive; 
-  height: 55px;
+  height: 80px;
   line-height: 1.6;
+  font-family: 'Balsamiq Sans', cursive;
+  border-top: gray 2px solid;
 }

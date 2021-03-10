@@ -87,7 +87,7 @@ function DarkMode() {
     // element2.classList.toggle('dark-mode');
     // element3.classList.toggle('dark-mode');
     for (let i = 1; i < imagesCount.length; i++) {
-      document.getElementById(i).style.filter = 'grayscale(100%)';
+      document.getElementById(i).style.filter = 'grayscale(40%)';
     }
     // el.href = 'css/black.css';
     if (r.id === 'be' ) {
