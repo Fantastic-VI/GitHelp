@@ -91,9 +91,11 @@ function DarkMode() {
     // el.href = 'css/black.css';
     if (el.href === 'css/style.css') {
       el.href = 'css/black.css';
+      console.log(1);
     }
     else {
       el.href = '../css/black.css';
+      console.log(2);
     }
 
   }
