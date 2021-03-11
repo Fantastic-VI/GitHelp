@@ -22,6 +22,17 @@
         text-decoration: none;
 
     }
+    .loc1
+    {
+        font-size: larger;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    a{
+        text-decoration: none;
+
+    }
    
     article
     {
