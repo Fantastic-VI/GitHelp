@@ -18,7 +18,6 @@ function handlesubmit (event) {
 const gitHelpForm = document.getElementById('form');
 gitHelpForm.addEventListener('submit' , handlesubmit);
 function addSelectedService () {
-  console.log(event.target.items.value);
   let item = Number (event.target.items.value);
   let name = event.target.name.value;
   let location1 = event.target.location1.value;
