@@ -9,7 +9,6 @@ MainConstructor.prototype.addItem = function (name, phone, location1, location2,
     for (let j = 0; j < localPrevious.length; j++) {
       const olditems = new Adding(localPrevious[j].name, localPrevious[j].phone, localPrevious[j].location1,localPrevious[j].location2,localPrevious[j].location3, localPrevious[j].time,localPrevious[j].item,localPrevious[j].details );
       this.items.push(olditems);
-      console.log(olditems);
     }
   }
   const newItem = new Adding(name, phone, location1, location2, location3, time, item, details);
@@ -53,7 +52,6 @@ MainConstructor.prototype.fillTheList = function (listItem) {
 };
 MainConstructor.prototype.removeItem = function (num) {
   this.items.splice(num, 1);
-  console.log(num);
 };
 /*start of font sizing*/
 function decreaseFontSizeBy1px() {
@@ -93,7 +91,6 @@ function DarkMode() {
     if (r.id === 'be' ) {
       el.href = 'css/black.css';
       indexes = true;
-      console.log(1);
       document.getElementById('logo').src = './images/black.png';
     }
     else {
@@ -145,7 +142,6 @@ function LightMode() {
       el.href = 'css/white.css';
       indexes2 = true;
       document.getElementById('logo').src = './images/white.png';
-      console.log(1);
     }
     else {
       el.href = '../css/white.css';
