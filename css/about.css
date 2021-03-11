@@ -2,7 +2,6 @@
   background-color: transparent;
   width: 200px;
   height: 200px;
-  /* perspective: 1000px; */
   border-radius: 10%;
 }
 .flip-card-inner {
@@ -33,7 +32,6 @@
   position: absolute;
   width: 200px;
   height: 200px;
-  /* -webkit-backface-visibility: hidden; */
   backface-visibility: hidden;
   border-radius: 10%;
 }
