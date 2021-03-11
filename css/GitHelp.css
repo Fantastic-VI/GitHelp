@@ -5,8 +5,6 @@
   border-radius: 5px;
 }
 
-
-
 .loc
  {
    display: inline;
@@ -49,6 +47,7 @@ input[type=text], select {
   {
     line-height: 2.5;
   }
+
   .phone
   {
     display: grid;
@@ -57,6 +56,16 @@ input[type=text], select {
     border: 2px solid #ccc;
     border-radius: 5px;
   }
+
+  .phone
+  {
+    display: grid;
+    width: 70%;
+    height: 43px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
   .display
   {
     display: block;
