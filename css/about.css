@@ -52,15 +52,6 @@
     height: 200px;
   }
   
-  .flip-card-back {
-    background-color: gray;
-    color: black;
-    transform: rotateY(180deg);
-    border-radius: 10%;
-    width: 200px;
-    height: 200px;
-  }
-
 main section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;

@@ -76,19 +76,7 @@ main {
   font-size: large;
   width: 20px;
 }
-.secondNav {
-  width:1fr; 
-  border-bottom: grey 2px solid;
-}
-.sizingButton {
-  padding: 0 3px;
-  background-color: #674697;
-  color: white;
-  border-color: white;
-  border-radius: 5%;
-  font-size: large;
-  width: 20px;
-}
+
 /* toggle buttons Begin*/
 .switch {
   position: relative;
