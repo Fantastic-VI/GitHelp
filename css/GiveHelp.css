@@ -33,6 +33,7 @@ tr {
  margin-right: 20px;
 }
 .input1{
+
   width: 20%;
   background-color: #674697;
   color: white;
@@ -57,12 +58,12 @@ tr {
  padding: 10px ;
 }
 #div1{
-/* border: 2px gray groove;
-margin-bottom: 30px;
-padding-left: 20px;
-line-height: 60px;
-border-radius: 10px;
-margin-top: 40px; */
+/* 
+
+
+
+
+ */
 border-top: thin;
 border-right: thin;
 border-left: thin;
