@@ -37,7 +37,6 @@ setInterval(() => {
 
 dots.forEach((dot, i) => {
   dot.addEventListener('click', () => {
-    console.log(currentSlide);
     init(i);
     currentSlide = i;
   });
