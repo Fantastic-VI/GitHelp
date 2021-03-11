@@ -33,22 +33,27 @@ tr {
  margin-right: 20px;
 }
 .input1{
- /* 
- 
- 
- 
- 
- */
- width: 20%;
- background-color: #674697;
- color: white;
- padding: 14px 20px;
- margin: 8px 0;
- border: none;
- border-radius: 4px;
- cursor: pointer;
-}
 
+  width: 20%;
+  background-color: #674697;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ }
+ .input1{
+  width: 20%;
+  background-color: #674697;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ }
+ 
 .input1:hover {
   background-color: #74618f;
 

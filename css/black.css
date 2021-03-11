@@ -57,6 +57,21 @@ header {
   color: white;
   font-family: 'Balsamiq Sans', cursive;
 }
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  align-items: center;
+  padding: 0 20px;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  height: 70px;
+  font-size: 15px;
+  border-bottom: gray 2px solid;
+}
+
 main {
   width: 70%;
   margin: auto;

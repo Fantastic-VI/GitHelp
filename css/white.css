@@ -32,6 +32,21 @@ nav a {
   text-decoration: none;
   color: black;
 }
+.logoImg{
+  float: left;
+  margin-right: 50px;
+}
+.logo {
+  width:80px;
+}
+nav {
+  margin-top: 30px;
+}
+nav a {
+  padding-right: 15px;
+  text-decoration: none;
+  color: black;
+}
 .sizeAndcolor{
   float: right;
   margin-top: -20.9px;

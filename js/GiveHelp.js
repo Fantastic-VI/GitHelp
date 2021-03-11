@@ -21,9 +21,7 @@ function renderTable (choice) {
 }
 function loadTable () {
   const tableItems = JSON.parse(localStorage.getItem('a')) || [];
-  console.log(tableItems);
   list = new MainConstructor(tableItems);
-  console.log(list);
 }
 function clearTable () {
   const elements = document.querySelector('tbody');
@@ -35,7 +33,6 @@ function showTable (choice) {
   const bodyElement = document.querySelector('tbody');
   for (let i in list.items){
     if(choice === Number (list.items[i].item)){
-      console.log(list.items);
       const trElement = document.createElement('tr');
       bodyElement.appendChild(trElement);
       const td1Element = document.createElement('td');
